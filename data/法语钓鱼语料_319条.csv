@@ -1,0 +1,1375 @@
+﻿编号,原文（法语）,类型,伪装对象,诈骗手法,判定依据,是否钓鱼,来源,备注
+示例1,"E-service Clients BRED <BRED_secureID9593.noreply@zwina.com>
+Objet: Au sujet de la sécurité de votre compte! #Re-664366",邮件,BRED 银行,制造'账户安全'恐慌，诱导点击/回复,发件域名 zwina.com 不是银行官方域名，主题带感叹号制造紧急感,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例2,"Group Service <pimkles@dfyoxc.owier.com>
+Objet: Assurance Maladie | Ameli.Fr
+
+Bonjour,
+Votre caisse d'assurance maladie vous informe que vos remboursements de frais à recevoir...
+Nous vous demandons de mettre à jour vos données pour que votre remboursement soit effectué dans les plus délais.
+Montant: 249.98 Euro
+Référence: Ameli-A8005W
+https://www.assure.ameli.fr",邮件,法国医保 ameli,'有退款待领，请更新信息'，诱导填个人信息,发件域名 dfyoxc.owier.com 乱编；链接 www.assure.ameli.fr 仿冒（官方 ameli.fr）；落款语法错误,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例3,"Ref:AMZ6T <amazon.vente@mail.zz>
+Objet: Commande validée
+
+Voici le récapitulatif de votre paiement de 1650.00€ effectué sur AMAZON.
+Montant: 1650.00€
+Marchand: Amazon
+Réf: AMZ6T_08J - 17/11/2025
+Contacter le service SAV au (+33 6 39 98 41 15)",邮件,亚马逊,伪造'你有一笔 1650 欧大额订单'，诱导拨打假客服电话,发件域名 mail.zz 是可疑顶级域；正文无收件人姓名；只有恐吓性金额,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例4,"Alertes de Transaction <adm.fiscal@drastosa.com.br>
+Objet: Paiement réussi
+
+Le paiement a été validé avec succès.
+Bonjour, @mail.fr
+Nous vous confirmons que le règlement a été dûment enregistré et validé.
+⚠️ Important : Le premier prélèvement associé à cette opération interviendra dans un délai de 24h...
+Si ce paiement ne venait pas de vous, Veuillez nous appeler sans délai au +33 1 89 62 ...",邮件,法国央行 Banque de France,'一笔你没做过的付款已成功，24 小时内扣款，快打电话',发件域名 drastosa.com.br 是巴西注册乱编域名；正文 @mail.fr 无真实收件人名（群发特征）,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例5,"Anti-Virus <□□□□@gmail.com>
+Objet: Confirmation de renouvellement de votre abonnement Avast Anti-Virus
+
+Bonjour,
+Nous sommes heureux de vous informer que votre abonnement Avast Anti-Virus a été renouvelé avec succès pour une période de 5 ans.
+Montant prélevé: 489.19 €
+Le montant prélevé sera crédité sur votre compte bancaire dans un délai de 24 à 48 heures.
+Si vous n'avez pas effectué ce paiement, contactez notre service clientèle au 09 70 46 □□□",邮件,杀毒软件 Avast,'5 年订阅已扣款 489.19 欧，不打客服退不了钱'（诱导打假客服、远程控制电脑）,发件人是普通 gmail 而非官方域名；'扣款会在 24-48 小时内退回'矛盾话术,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例6,"Merci pour votre commande n°8945623 – 589,99 € seront débités. Un problème ? Appelez immédiatement le 09 XX XX XX XX. SOS carte",短信,银行止付（SOS carte）,假称订单扣款，诱导拨打假止付电话,号码为官方脱敏格式；先吓人再让你打电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例7,"Bonjour, Votre achat de 594,98 EUR chez Darty a bien été enregistré. Si vous n'avez pas initié ce paiement, contacter vite le service opposition au 07 XX XX XX XX (non surtaxé). Cordialement, Service Opposition",短信,Darty 电商,假称已扣款，诱导拨假客服,号码为官方脱敏；真实商城不会这样通知,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例8,"Crédit Agricole: Un paiement de 657,99 € est en cours de validation. Si vous n'en êtes pas l'auteur, veuillez contacter le service de sécurité au 09 XX XX XX XX.",短信,农业信贷银行 Crédit Agricole,假称付款验证中，诱导拨打假安全电话,官方不会用短信号码直接要你回电,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例9,"Info Bred: Opération de 935 € initiée chez Bureau Vallée sur votre carte. Si non autorisée, appelez au 09 XX XX XX XX",短信,BRED 银行,假称大额消费，诱导回电,号码为官方脱敏；真实银行用 app 推送不用短信,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例10,"De : Direction Générale des finances publiques <service@dgfinp-impots.com>
+Objet : Documents nécessaires pour compléter votre dossier
+
+Madame, Monsieur,
+Notre service procède à une mise à jour générale des dossiers pour particuliers.",邮件,法国税务局 DGFiP,假称需补充档案材料，诱导回复个人信息或点链接,发件域名 dgfinp-impots.com 是仿冒（官方 impots.gouv.fr）；正文无收件人姓名,是,hameconnage-impots,官方示例（已标注）
+示例11,"Objet : Remboursement [371341-1554822122]
+（邮件内伪造 impots.gouv.fr 页面）
+Remboursement N°:90751327263
+Bonjour,
+Votre message est en pièce jointe",邮件,税务局退税服务,假称有退税待领，诱导点链接或下载附件,退税编号为乱编；DGFiP 官方声明真实税务流程只用纸质挂号信,是,hameconnage-impots,官方示例（已标注）
+示例12,"OBJET : AVIS DE NOTIFICATION FISCALE
+
+La Direction générale des finances, représentée par Mr BERNARD POIRIER, chef du Service fédéral du contrôle financier... Vous envoie cet e-mail pour vous informer qu'il existe plusieurs accusations de fraude fiscale à votre encontre...
+Après avis de la Commission des offensives fiscales, le Service fédéral des impôts prendra toutes les mesures nécessaires pour vous poursuivre et vous traduire en justice. Evidemment, vous risquez jusqu'à cinq ans de prison et une amende de 500 000 €, selon le consensus des lois fiscales allemandes.
+A compter de cette notification, vous aurez 48 heures pour payer la somme de 7 108,00 € correspondant à votre imposition...",邮件,法国财政监察总局 IGF,恐吓'你涉嫌税务欺诈'，限 48 小时交 7108 欧，否则坐牢+查封财产,法国机构引用'德国法律'自相矛盾；官方不会用邮件发此类通知；金额巨大且限时施压,是,escroquerie-accusation-fraude-fiscale,官方示例（已标注）
+示例13,"Objet : AVIS D'IMPÔT
+
+Madame, Monsieur,
+Nous, la Direction Générale des Finances, sous la demande de M. BRUNO ROUSSELET...
+Vous avez effectivement commis une infraction ou évasion fiscale, conformément aux dispositions de l'article 1741 du Code Général des Impôts...
+Le Service Fédéral des impôts prendra toute mesure nécessaire... vous risquez les 2 peines suivantes : 500 000 € d'amende et 5 ans d'emprisonnement.
+Dès réception de cet avis d'impôt, vous avez un délai de 72 heures pour régler la somme de 4 819,00 €...
+E-MAIL : p*bliques*finances***@gmail.com",邮件,法国公共财政总局 DGFiP,同款恐吓，限 72 小时转 4819 欧；联系邮箱是 gmail 私人邮箱,官方公文不可能用 gmail 私人邮箱；'Service Fédéral'不是法国机构叫法（法国是共和制）,是,escroquerie-accusation-fraude-fiscale,官方示例（已标注）
+示例14,"INFO ANTAI: Vous avez une contravention à payer. Afin d'éviter toute pénalité veuillez la régler via:
+https://d___r-amendes.fr",短信,国家违章处理中心 ANTAI,假称有罚单待缴，诱导点击仿冒网址,官方网址是 amendes.gouv.fr；短信网址为仿冒且字符脱敏,是,campagne-messages-frauduleux-contravention,官方示例（已标注）
+示例15,"AMENDE GOUV : Nos agents ont trouvés une contravention rattachée à votre dossier.
+Veuillez consulter les détails de la contravention via : amendes_.info",短信,ANTAI / 罚单服务,假称'发现你的违章'，诱导访问仿冒网站,官方域名是 gouv.fr 结尾；amendes_.info 是仿冒,是,campagne-messages-frauduleux-contravention,官方示例（已标注）
+示例16,"Info ANTAI : Vous avez un retard de paiement de 35,00e, dossier référence 20023099.
+Consulter mon dossier d'infraction via : https://dossier-  -gouv.info",短信,ANTAI / 罚单服务,假称罚款逾期 35 欧，诱导查看档案,域名 dossier-*-gouv.info 仿冒 gouv.fr；编号乱编,是,campagne-messages-frauduleux-contravention,官方示例（已标注）
+示例17,"Nous avons trouvés une contravention rattachée à votre dossier
+Arrêt imposé par un feu rouge non respecté par le conducteur du véhicule
+Le montant de la contravention s'élève à 35€
+Veillez noter que si vous ne payez pas une amende, les peines possibles peuvent encourir :
+• Des pénalités supplémentaires...
+• Une saisie sur salaire ou sur compte bancaire...
+• Une peine d'emprisonnement de 5 ans maximum...
+Payer mon amende
+Cordialement, République française",短信,ANTAI / 交通罚单,完整版恐吓短信：红灯违章 35 欧+坐牢威胁，诱导点'付款',"真实罚单通过纸质/官方 app 通知；'Cordialement, République française'不合公文规范",是,campagne-messages-frauduleux-contravention,官方示例（已标注）
+示例18,"De: ""Service Client""
+Envoyé: mercredi 4 Août 2021 15:45
+Objet: Confirmation de votre commande",邮件,电信运营商 SFR,假称订单确认，诱导查看/取消订单,发件人只写'Service Client'无真实域名；仿冒 SFR,是,escroquerie-fausse-commande,官方示例（已标注）
+示例19,"BOULANGER : Vous avez été victime d'une surfacturation de 12,25€, merci de remplir le formulaire : boulanger.link/?d=718457",短信,电商 Boulanger,假称被多扣 12.25 欧，诱导填表,官方域名是 boulanger.com；boulanger.link 是仿冒,是,escroquerie-fausse-commande,官方示例（已标注）
+示例20,"Objet: 你的 Darty 订单确认（伪造）
+VOTRE COMMANDE DARTY.COM
+N° de transaction : 2910203636
+TV LED Philips The One 65PUS7354 - 889,00 €
+Total de votre commande [TTC] : 994,99 €
+Montant payé en ligne 990,00 €
+Adresse de facturation: [victime]
+Destinataire de la commande: S[]M - 257 RUE D[]E - 34080 MONTPELLIER
+Vous pouvez annuler votre commande et vous faire rembourser en cliquant ici : Annuler ma commande",邮件,电商 Darty,伪造真实订单确认+受害者真实地址，诱导点'取消订单/退款'链接,订单是假的；'取消订单'链接导向钓鱼站；用真实信息泄露增强可信度,是,escroquerie-fausse-commande,官方示例（已标注）
+示例21,"From: ChronoPost-International@mon-dossier-restriction.cc
+Subject: Avis !
+
+Bonjour,
+A titre de rappel, Chronopost vous informe que votre envoi n°1550377 **0935K est toujours en attente d'instruction de votre part.
+Veuillez confirmer le tarif des frais de livraison (2,99 EUR) et l'envoi de colis en cliquant sur lien suivant:
+REPROGRAMMER VOTRE LIVRAISON",邮件,快递 Chronopost,假称包裹滞留需确认 2.99 欧运费，诱导点'重新安排配送'按钮,发件域名 mon-dossier-restriction.cc 是仿冒（官方 chronopost.fr）；真实快递不会邮件收运费,是,escroqueries-livraison-colis,官方示例（已标注）
+示例22,"bonjour c'est le livreur votre colis ne rentrait pas dans la boîte aux lettres, veuillez choisir un autre créneau ou point relais sur https://mondialreplanif-colis.com/",短信,快递 Mondial Relay,假快递员称包裹塞不进信箱，诱导选时段/选站点（点仿冒网站）,官方域名 mondialrelay.fr；mondialreplanif-colis.com 是仿冒,是,escroqueries-livraison-colis,官方示例（已标注）
+示例23,"Cher(e) [redacted], vous devez payer 1.95€ TVA pour votre colis, payer en ligne et eviter les frais de dedouanement(15€): http://m9d.us/9aqsx",短信,快递（通用）,假称包裹需补交 1.95 欧关税，诱导在线支付,真实快递不会用短链收税；m9d.us 是短链跳转到钓鱼站,是,escroqueries-livraison-colis,官方示例（已标注）
+示例24,"Nous avons essayé de livrer votre colis LP995215701FR, mais il n'y a aucun affranchissement. Suivez les instructions ici: http://bit.do/fHXvw",短信,快递（通用）,假称包裹无邮资被退回，诱导点链接,真实快递不用 bit.do 短链；官方查询走官网/app,是,escroqueries-livraison-colis,官方示例（已标注）
+示例25,bonjour maman/papa. Mon téléphone est cassé. C'est mon nouveau numéro de téléphone. +33XXXXXXXXX vous pouvez enregistrer ceci. envoie moi un message via whatsapp.,短信,冒充亲人（孩子）,假冒'孩子'称手机坏了换号，诱导加 WhatsApp 后骗钱,+33XXXXXXXXX 号码被官方脱敏；群发无称谓细节,是,escroquerie-enfant-probleme-telephone-coucou-papa-maman,官方示例（已标注）
+示例26,"Coucou maman, c'est moi. J'ai eu un problème avec mon numéro de téléphone, c'est mon numéro temporaire. Envoie moi un message sur WhatsApp, sur ce numéro le plus rapidement possible ! Je ne pourrai plus te répondre ici comme je n'ai plus de crédit, je dois te parler de quelque chose...",短信,冒充亲人（孩子）,同款亲情诈骗：临时号码+无话费，诱导加 WhatsApp,骗术经典模板：制造'孩子急事'恐慌+要求脱离原渠道,是,escroquerie-enfant-probleme-telephone-coucou-papa-maman,官方示例（已标注）
+示例27,"De : Papa c'est moi <info@xyeui.brevosend.com>
+Objet : mon tel à pris l'eau
+
+Bonjour Papa, Je te laisse mes nouvelles coordonnées car je n'ai plus accès à mon ancien téléphone. J'ai eu un petit souci avec celui-ci et les numéros enregistrés dessus n'ont pas pu être récupérés. Pour être sûr que j'ai bien ton contact, envoie-moi un SMS lorsque tu auras pris connaissance de ce message. 06 XX 39 XX 17",邮件,冒充亲人（孩子）,邮件版亲情诈骗：'手机进水换号'，诱导回复短信/加新号,发件域名 brevosend.com 是群发营销平台域名，非个人邮箱；号码脱敏,是,escroquerie-enfant-probleme-telephone-coucou-papa-maman,官方示例（已标注）
+示例28,"De : c'est moi <marc3l@inspire.cool>
+Objet : Mon tel est casser papa..
+
+Bonjour Papa, J'ai un nouveau numéro pour que tu puisses me contacter par message. J'ai fait tomber mon téléphone dans l'eau et j'ai malheureusement perdu tous mes contacts. envoi moi un sms quand tu verra cet e-mail. Tu peux me joindre au : 06:XX:39:XX:17",邮件,冒充亲人（孩子）,邮件版亲情诈骗变体：落水丢通讯录，诱导回复,发件域名 inspire.cool 是可疑新顶级域；法语有拼写错误（casser/cassé）,是,escroquerie-enfant-probleme-telephone-coucou-papa-maman,官方示例（已标注）
+示例29,"De: 947588321 De la part de sav.orange.fr - actu
+Objet: Dernier jour ⚠️ Echangez vos points de fidélité avant l'échéance des gains le 15/10/2021
+
+Chers clients, chères clientes,
+En tant que client Orange vous êtes automatiquement enregistré dans le programme de fidélité. Nous vous informons que depuis votre souscription chez Orange le total de vos points cumulés s'élève à 61 135 expirant le 15/10/2021. Grâce à ces derniers, vous recevrez un mobile pour vous remercier de votre fidélité. L'expédition aura lieu après la confirmation de votre adresse ainsi que le paiement du service de livraison.",邮件,电信 Orange,假称忠诚积分即将到期可换手机，诱导确认地址并支付'配送费'（实际是骗取个人信息）,发件显示为 947588321 数字而非官方域名；'最后一天+积分+配送费'典型诱饵,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例30,"de: Sylviane <ferencziimre@t-online.hu>
+objet: Informations
+
+Bonjour Monsieur / Madame,
+Nous vous contactons par cette présente lettre pour vous informer que vous venez de gagner la somme de 680.000€ (Six Cent Quatre Vingt Milles Euros) du tirage au sort organisé par la Française des Jeux LOTERIE JOKER+. Pour la réclamation du gain veuillez entrer en contact direct avec Maître Robin Sébastien: Email: cab.robin.sebastien@gmail.com Pour plus d'information, Veuillez trouver le formulaire se trouvant en annexe (Fichier Joint).",邮件,彩票 FDJ,假称中奖 68 万欧元，要求联系'律师'并打开附件表格（实为骗资料/装病毒）,发件域名 t-online.hu 为外国免费邮箱；未参加抽奖却'中奖'；联系用 gmail 而非官方渠道,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例31,"Objet: Authentification-Mobile
+
+Bonjour,
+En accord de la Directive européenne, La double authentification devient une obligation. Confirmer votre mobile ici
+
+Nous vous remercions de votre confiance.
+Cordialement,
+Votre conseiller FLOATBANK.",邮件,银行 Floa Bank,假称欧盟指令强制双重认证，诱导点击'确认手机'按钮套取手机号,官方不会用邮件收集手机号做'认证'；指向假表单,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例32,"DIRECTION GÉNÉRALE DES FINANCES PUBLIQUES
+Votre remboursement de 228,35 € est disponible Référence de l'avis : 1875094580391
+Bonjour.
+Nous vous informons que votre remboursement de 228,35 € est disponible.
+Vous pouvez vous abonner à nos services en ligne et obtenir un nouveau certificat.
+Il vous suffit de vous connecter sur le portail fiscal, Espace Particuliers",邮件,税务局 DGFiP,"假称 228,35 欧退税可领，诱导登录仿冒税务门户",退款不会经邮件通知点击领取；官方退税自动到账,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例33,"De : 'Group Service' <pimkles@dfyoxc.owier.com>
+Objet : Assurance Maladie | Ameli.Fr
+
+Votre caisse d'assurance maladie vous informe que vos remboursements de frais à recevoir
+Nous vous demandons de mettre à jour vos données pour que votre remboursement soit effectué dans les plus délais.
+Montant: 169.20 Euro
+Référence: Ameli-A8005W
+https://www.assure.ameli.fr",邮件,医保 ameli,"假称 169,20 欧报销待领，因'手机号不匹配'要求更新个人数据",发件域名 dfyoxc.owier.com 为仿冒；真实域名 ameli.fr；链接 assure.ameli.fr 非官方,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例34,"ING
+Chère cliente, Cher client,
+Lors de votre dernier opération bancaire, nous avons remarqué une activité inhabituelle sur votre compte.
+Pour réactiver votre compte Vous devez mettre à jour vos informations, une fois ces dernières validées, le compte fonctionnera normalement.
+L'ensemble du processus ne prendra que 5 minutes. Vous devez agir maintenant pour résoudre le problème le plus rapidement possible.
+Suivez le lien ci-dessous pour finaliser le processus et régler l'état de votre compte
+Accéder à votre espace sécurisé",邮件,银行 ING,假称账户有异常活动需 5 分钟内更新信息，诱导点'进入安全空间',银行不会邮件要求更新信息；'限时+恐慌'典型手法,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例35,"De : service client
+Objet : SOCGEN@FRANCE.FR
+
+SOCIETE GENERALE
+Bonjour,
+Un conseiller vous a adressé un nouveau message important.
+NOUS VOUS INVITONS À LE(S) CONSULTER
+En cliquant sur le lien ci - dessous :
+Accéder Au Message",邮件,银行 Société Générale,假称顾问发来重要消息，诱导点'查看消息'链接（实为钓鱼站）,邮件头 De: service client 无官方域名；主题 SOCGEN@FRANCE.FR 系伪造地址,是,comment-reconnaitre-un-mail-de-phishing,官方示例（已标注）
+示例36,"ASSURANCE MALADIE :
+Votre nouvelle carte vitale est disponible.
+Remplissez ce formulaire afin de rester couvert :
+https://cpam-contact.fr",短信,医保 ameli,假称新医保卡可领，诱导填表保持'保险覆盖',官方域名 ameli.fr；cpam-contact.fr 是仿冒,是,smishing-hameconnage-sms,官方示例（已标注）
+示例37,"Urgent CA >
+Crédit Agricole
+Votre Compte a été bloqué par notre service.
+Débloquer votre compte en vous (Re)enregistrant à SecuriPass sur
+https://secu.c-agricole.link/",短信,银行 Crédit Agricole,假称账户被冻结，诱导通过 SecuriPass 重新注册解锁,官方域名 credit-agricole.fr；secu.c-agricole.link 是仿冒子域,是,smishing-hameconnage-sms,官方示例（已标注）
+示例38,"Crit'Air :
+Nos agents ont constaté que votre véhicule n'était pas muni de la vignette réglementaire Crit'Air 2022 veuillez la récupérer sous peine de contravention dans les prochaines 48 h sur le lien ci-joint :
+https://critair-f____.com/",短信,环保标 Crit'Air,假称未贴环保标将被罚款，48 小时内诱导点链接,官方平台 crit-air.gouv.fr；critair-f...com 是仿冒,是,smishing-hameconnage-sms,官方示例（已标注）
+示例39,"Chronopost: une erreur est survenue lors de la livraison de votre colis cliquez ici pour acheminer votre colis:
+https://chronopost-interruption.com",短信,快递 Chronopost,假称配送出错，诱导点链接'重新安排',官方域名 chronopost.fr；chronopost-interruption.com 是仿冒,是,smishing-hameconnage-sms,官方示例（已标注）
+示例40,"Netflix : Votre compte est restreint suite à un problème avec votre mode de paiement, vous devez mettre à jour celui-ci en suivant ces étapes :
+https://francestreaming.me/n/fr/",短信,流媒体 Netflix,假称支付方式问题导致账户受限，诱导更新支付信息,官方域名 netflix.com；francestreaming.me 是仿冒,是,smishing-hameconnage-sms,官方示例（已标注）
+示例41,"info ANTAI :
+Vous avez une contravention impayée d'un montant de 35€ à ce jour.
+Consultez votre dossier d'infraction via : https://ants-amende.fr",短信,交通罚单 ANTAI,假称有 35 欧罚单未付，诱导查'违规档案',官方域名 amendes.gouv.fr；ants-amende.fr 是仿冒,是,smishing-hameconnage-sms,官方示例（已标注）
+示例42,"VEUILLEZ TRANSMETTRE CE COURRIEL À QUELQU'UN DE VOTRE ENTREPRISE QUI EST PERMIS DE PRENDRE DES DÉCISIONS IMPORTANTES !
+
+Nous avons piraté votre site Web http://www.fr et extrait vos bases de données.
+Comment est-ce arrivé?
+Notre équipe a trouvé une vulnérabilité sur le site que nous avons pu exploiter... [中间为恐吓段落]
+
+Nous sommes disposés à ne pas détruire la réputation de votre site pour une somme modique. Les frais s'élèvent sont de 0.324 Bitcoin (environ 3000 USD).
+Envoyez le bitcoin à l'adresse Bitcoin suivante : [adresse bitcoin]
+Veuillez noter que vous devrez effectuer le paiement dans les 5 jours suivant la réception de cet avis, sinon la fuite de la base de données, les e-mails envoyés et la désindexation de votre site commenceront!",邮件,勒索者（自称黑客）,假称已入侵企业网站并窃取数据库，勒索 0.324 比特币（约 3000 美元）,官方认定纯属恐吓；无真实入侵证据；比特币匿名勒索,是,campagne-darnaques-au-chantage-au-site-internet-pretendu-pirate,官方示例（已标注）
+示例43,"PLEASE FORWARD THIS EMAIL TO SOMEONE IN YOUR COMPANY WHO IS ALLOWED TO MAKE IMPORTANT DECISIONS !
+
+We have hacked your website http://www.XXXXX.fr and extracted your databases.",邮件,勒索者（自称黑客）,同款网站被黑勒索信的英文版开头,官方公布的英文变体示例,是,campagne-darnaques-au-chantage-au-site-internet-pretendu-pirate,官方示例（已标注）
+示例44,"INFO ANTAI: Vous avez une contravention à payer. Afin d'éviter toute pénalité veuillez la régler via:
+https://d___r-amendes.fr",短信,交通罚单 ANTAI,假称有罚单需缴，避免罚款诱导点仿冒支付链接,官方域名 amendes.gouv.fr；d___r-amendes.fr 是仿冒,是,campagne-de-messages-frauduleux-reclamant-le-paiement-dune-contravention,官方示例（已标注）
+示例45,"AMENDE GOUV : Nos agents ont trouvés une contravention rattachée à votre dossier.
+Veuillez consulter les détails de la contravention via : amendes_.info",短信,交通罚单 ANTAI,假称系统查到关联您档案的罚单，诱导查详情,amendes_.info 是仿冒域名,是,campagne-de-messages-frauduleux-reclamant-le-paiement-dune-contravention,官方示例（已标注）
+示例46,"Arrêt imposé par un feu rouge non respecté par le conducteur du véhicule
+Bonjour,
+Nous avons trouvé une contravention rattachée à votre dossier
+Le montant de la contravention s'élève à 35€
+Veillez noter que si vous ne payez pas une amende, les peines possibles peuvent encourir : Des pénalités supplémentaires... Une saisie sur salaire ou sur compte bancaire... Une peine d'emprisonnement de 5 ans maximum...
+Payer mon amende
+Cordialement, République française",短信,交通罚单 ANTAI,假称闯红灯罚单 35 欧，恐吓不缴后果（扣薪/坐牢），诱导'立即缴款',官方不会用短信催罚并威胁坐牢；'République française'落款为伪造,是,campagne-de-messages-frauduleux-reclamant-le-paiement-dune-contravention,官方示例（已标注）
+示例47,"Avis de contravention reçu
+RÉPUBLIQUE FRANÇAISE
+amendes.gouv.fr
+Service de paiement en ligne des amendes
+
+Vous avez une contravention à payer. Merci de régler en cliquant ci-dessous
+Vous pouvez régler par carte bancaire (payer ou consignataire) toutes amendes : Veuillez vous acquitter de votre amende de stationnement de 35 EUR.
+Appuyez ici pour confirmer",邮件,交通罚单 ANTAI,假称停车罚单 35 欧，诱导点'确认缴费'按钮,伪造 amendes.gouv.fr 视觉；法语有错误（'on vous contacter'）；官方不邮件催缴,是,campagne-de-messages-frauduleux-reclamant-le-paiement-dune-contravention,官方示例（已标注）
+示例48,"Envoyé: mercredi 4 Août 2021 15:45
+De: 'Service Client'
+A: xxxxxxx@sfr.fr
+Objet: Confirmation de votre commande",邮件,电信 SFR,假称确认一笔并未发生的订单，诱导点'取消订单',发件仅显示'Service Client'无官方域名；收件 sfr.fr 邮箱,是,escroquerie-fausse-commande,官方示例（已标注）
+示例49,"BOULANGER : Vous avez été victime d'une surfacturation de 12,25€, merci de remplir le formulaire : boulanger.link/?d=718457",短信,电商 Boulanger,"假称被多扣 12,25 欧，诱导填'退款'表单",官方域名 boulanger.com；boulanger.link 是仿冒短域名,是,escroquerie-fausse-commande,官方示例（已标注）
+示例50,"DARTY
+VOTRE COMMANDE DARTY.COM
+Merci
+Votre commande a été validée...
+Rappel de votre commande
+N° de transaction : 2910203636
+Mode de paiement : Carte Bancaire
+TV LED Philips The One 65PUS7354
+Total de votre commande [TTC] 994,99 €
+Montant payé en ligne 990,00 €
+... Vous avez toujours la possibilité d'annuler votre commande et de vous faire rembourser...
+ANNULATION DE VOTRE COMMANDE
+Vous pouvez annuler votre commande et vous faire rembourser en cliquant ici : Annuler ma commande.",邮件,电商 Darty,假称一笔 990 欧的电视订单已付款，诱导点'取消订单'（实为钓鱼表单）,订单收货人/地址不是收件人本人（冒用个人信息）；'取消订单'按钮指向钓鱼站,是,escroquerie-fausse-commande,官方示例（已标注）
+示例51,"https://verificationssw.ddns.net/authen.php?code=FR&id=86228128&country=France
+[仿冒 PayPal 登录页：Email / Mot de passe / Connexion]",网页,支付 PayPal,假订单变体：诱导受害者登录'PayPal'核实退款，实为盗取账号密码,真实域名 paypal.com；ddns.net 动态域名是仿冒,是,escroquerie-fausse-commande,官方示例（已标注）
+示例52,"Je suis Mme YVETTE BERTRAND, commissaire divisionnaire, chef de la brigade de protection des mineurs (BPM), je vous contacte peu après une saisie informatique de la Cyber-infiltration (autorisée)... pour vous informer que vous faites l'objet de plusieurs Poursuites Judiciaires en vigueur: _La pédopornographie _La pédophilie _L'exhibitionniste _La Cyber pornographie _Le trafic sexuelle
+
+Vous êtes dès prévu de vous faire entendre par mail en nous écrivant vos justifications... cela dans un délai strict de 72 heures. Passé ce délai nous versons dans l'obligation de transmettre notre rapport à Mme Myriam Quémener procureur adjoint... pour établir un mandat d'arrêt à votre encontre... transmettre votre dossier à plusieurs chaînes de télévision nationale d'information...
+Pour tous informations écrivez à cette adresse : protection.mineurs@secretary.net",邮件,冒充警察（未成年人保护旅）,假称收件人涉嫌严重违法被追诉，72 小时内须邮件自证清白，否则逮捕并公开（实为骗钱）,发件/回复地址非 @interieur.gouv.fr 官方域名（protection.mineurs@secretary.net）；官方已辟谣,是,campagnes-messages-escroquerie-usurpant-identite-police-nationale,官方示例（已标注）
+示例53,"Je suis Mr Christian RODRIGUEZ, directeur général de la gendarmerie nationale. Je vous contacte peu après une saisie informatique de cyber-infiltration (Autorisée...)... pour vous informer que vous faites l'objet de plusieurs poursuites judiciaires en vigueur: * LA PÉDOPORNOGRAPHIE * SITE PORNOGRAPHIQUE * CYBER PORNOGRAPHIE * DÉTOURNEMENT DE MINEURS
+
+Vous êtes prié de vous faire entendre par mail en nous écrivant vos justifications... dans un délai strict de 72 heures. Passé ce délai... À Mme Mélanie BRIARD, substitut du procureur... pour établir un mandat d'arrêt à votre encontre, et vous serez fiché comme délinquant sexuel. Votre dossier sera également transmis aux médias...",邮件,冒充宪兵队（总监）,同款冒充执法机构诈骗的宪兵队变体：假罪名+72小时限期+逮捕威胁,官方宪兵队已声明：官方邮件必以 gendarmerie.interieur.gouv.fr 结尾,是,campagnes-messages-escroquerie-usurpant-identite-police-nationale,官方示例（已标注）
+示例54,"De : mon_compte@mail.fr <mon_compte@mail.fr>
+Objet : Votre vie privée est entre mes mains
+
+Bonjour pervers, j'ai envoyé ce message depuis votre messagerie Microsoft.
+Je tiens à vous informer d'une très mauvaise situation pour vous...
+Avez-vous entendu parler de Pegasus? Il s'agit d'un logiciel espion qui s'installe sur les ordinateurs et les smartphones et permet aux pirates de surveiller l'activité... [中间为威胁偷录私密视频的恐吓段落，已省略]
+
+Transférez 1200 € vers mon portefeuille Litecoin (LTC) : ltc1qfmet08vsynkc6jm2hm5peylz9nn5u8fv7ufwn2
+Une fois que j'aurai reçu la confirmation de la transaction, je supprimerai définitivement toutes les vidéos vous compromettant, je désinstallerai Pegasus de tous vos appareils et je disparaîtrai de votre vie.",邮件,勒索者（自称黑客）,webcam 勒索信：假称装了 Pegasus 间谍软件偷录视频，勒索 1200 欧莱特币,官方认定纯恐吓；Pegasus 说法为编造；威胁+加密货币勒索是标志,是,chantage-a-lordinateur-ou-a-la-webcam-pretendus-pirates,官方示例（已标注）
+示例55,"De: 'Ref:AMZ6T' <amazon.vente@mail.zz>
+Objet: Commande validée
+Date: 17 novembre 2025 à 17:49:05
+Voici le récapitulatif de votre paiement de 1650.00€ effectué sur AMAZON.
+Montant: 1650.00€
+Marchand: Amazon
+Réf: AMZ6T_08J - 17/11/2025
+Contacter le service SAV au (+33 6 39 98 41 15)",邮件,电商 Amazon,假称亚马逊扣款 1650 欧，给'客服'电话诱导回拨（实为诈骗号码）,发件域名 mail.zz 为伪造；真实亚马逊不会邮件通知扣款并留手机号,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例56,"De: Alertes de Transaction <adm.fiscal@drastosa.com.br>
+Objet: Paiement réussi
+
+Le paiement a été validé avec succès.
+Bonjour, @mail.fr
+Nous vous confirmons que le règlement a été dûment enregistré et validé.
+⚠️Important: Le premier prélèvement associé à cette opération interviendra dans un délai de 24h à compter de la réception de ce courriel.
+Détails de l'alerte: Référence du dossier: KAC-130996
+✅ Que devez-vous faire ?
+Si ce paiement ne venait pas de vous, Veuillez nous appeler sans délai au +33 1 89 62 □.
+Cordialement,
+Service Sécurité Clientèle
+Banque de France",邮件,央行 Banque de France,假称一笔扣款将在 24 小时内发生，诱导回拨'安全部门'电话,发件域名 drastosa.com.br 为外国仿冒；法国央行不会用邮件预警扣款,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例57,"Merci pour votre commande n°8945623
+- 589,99 € seront débités.
+Un problème ? Appelez immédiatement le 09 99 00 67 89",短信,银行止付诈骗（SOS carte）,"假称订单 589,99 欧将扣款，诱导立即回拨'止付'电话",真实扣款不会先短信预告；09 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例58,"Bonjour
+Votre achat de 594,98 EUR chez Darty a bien été enregistré.
+Si vous n'avez pas initié ce paiement, contacter vite le service opposition au 07 XX XX XX XX (non surtaxé).
+Cordialement,
+Service Opposition",短信,银行止付诈骗,"假称 Darty 购物 594,98 欧已记账，诱导回拨'止付服务'",官方不会用短信通知并要求回拨；07 手机号为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例59,"Crédit Agricole: Un paiement de 657,99 € est en cours de validation. Si vous n'en êtes pas l'auteur, veuillez contacter le service de sécurité au 09 XX XX XX XX.",短信,银行 Crédit Agricole,"假称一笔 657,99 欧付款验证中，诱导回拨'安全部门'",银行官方短信号码固定且不会如此措辞；09 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例60,Votre virement de 2132.27 eur à bien été pris en compte. Si vous n'avez effectué aucune opération veuillez contacter le 01 XX XX XX XX.,短信,银行止付诈骗,"假称 2132,27 欧转账已受理，诱导回拨电话",语法错误（à bien été）；官方不会这样通知,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例61,"Info Bred: Opération de 935 € initiée chez Bureau Vallée sur votre carte. Si non autorisée, appelez au 09 XX XX XX XX",短信,银行 BRED,假称 BRED 卡在 Bureau Vallée 有 935 欧操作，诱导回拨,官方短信号码固定；09 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例62,"Rapport-20255 Paiement autorisé avec succès Ref : QHM-VAZ-3342 Votre espace personnel a détecté la connexion d'un Xiaomi 14t Pro récent. Lieux : Marseille Adresse IP : 16.**.012.*** Une opération financière de 2 075 € destinée à M*** D*** a été détectée. Carte XXXX : opération de 1 142,50 €. N'hésitez pas à nous joindre tout de suite. Si vous n'êtes pas à l'origine : 07 XX XX XX XX (24h/24 – appel non surtaxé). Merci de votre confiance et de votre vigilance.",短信,银行止付诈骗（伪造细节）,假称检测到新设备登录+多笔操作，用大量伪造细节（地点/IP/金额）诱导回拨,官方不会在短信暴露此类'内部检测'细节；07 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例63,"Réf. 1075PTA40M Un nouvel appareil a été détecté sur votre espace personnel. Une transaction est en cours : 3 300 € à destination de C*** C***. Une opération par carte terminant par XXXX a également été signalée. Montant : 1 912,99 € 📞 Si vous n'êtes pas à l'origine de ces opérations, veuillez nous contacter immédiatement : 09 XX XX XX XX (appel 24h/24) Merci de votre vigilance. ❗ Ne répondez pas à ce message si vous êtes à l'origine de ces opérations.",短信,银行止付诈骗（伪造细节）,同款变体：新设备+多笔大额交易细节，诱导立即回拨,官方不会用短信通知并要求回拨；09 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例64,"Chèr(e) client(e),
+Votre réabonnement de 5 ans de protection de l'antivirus AVAST pour vos appareils à été activé avec succès !
+Prélèvement en cours
+Montant : 449.89 €
+Si vous n'êtes pas à l'origine de ce paiement contacter le service client dans un délai de 24h à 48h au O9X XXX XXX ou (+33 9XX XXX XXX).
+Notre équipe d'assistance se fera le plaisir de répondre à toutes vos questions et demandes.",邮件,杀毒 Avast,"假称 Avast 续费 5 年扣 449,89 欧，48 小时内不回拨就扣款（实为骗回拨）",官方杀毒软件不会邮件通知续费扣款；电话为诈骗号码,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例65,"Bonjour,
+Nous vous informons que votre paiement de Transcash au bureau de tabac a été accepté et traité avec succès.
+Voici les détails :
+Commande : 8 coupons
+Montant: 2170,00 €
+Date :28/06/2025
+Heure :01h03
+Réf. :MN242005
+Si vous pensez qu'il s'agit d'une erreur, vous êtes prié d'appeler sans délai le service banque à distance au 07 XX XX XX XX pour contester.",邮件,支付 Transcash,假称 8 张充值券 2170 欧已购买，诱导回拨'银行远程服务',官方不会邮件通知此类交易；07 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例66,"Bonjour, Vous avez initié une demande de virement de 954 € au profil de F*** U*** Le 16/10/2025 à 23:06:50 A été crédité sur le compte du destinataire : FR7616899XXXXXXXXXXXXXX5989 Bénéficiaire : F*** U*** Emetteur: C*** K*** Montant : 954 € Type de virement : unique Référence : 258019FR Motif : assistance medicale Si vous n'êtes pas a l'origine de cette operation Merci de prendre contact rapidement avec le service répression des fraudes 01 XX XX XX XX",邮件,银行止付诈骗（伪造转账细节）,假称 954 欧转账已完成并给出伪 IBAN，诱导回拨'反欺诈部门',官方不会邮件展示此类细节并要求回拨；01 号码为诈骗电话,是,lhameconnage-au-faux-numero-dopposition-bancaire,官方示例（已标注）
+示例67,"L'objet de l'email frauduleux est souvent alarmiste. Exemples de sujets publiés par BNP Paribas :
+- 'Rappel : Votre compte sera limité'
+- 'Service Bancaire : nous avons restreint l'accès à votre Carte Bancaire'
+- 'Nouvelle sûreté contre l'escroquerie'
+- 'Nous avons détecté des transactions inhabituelles sur vos comptes'
+- 'Nous avons détecté différents ordinateurs connectés à votre compte'",邮件,银行 BNP Paribas（主题行示例集）,BNP 官方公布的钓鱼邮件主题行合集：均为'账户受限/检测异常'类制造恐慌的标题,来源为 BNP Paribas 官方安全页公布；主题行特征=警报+限时,是,mabanque.bnpparibas identifier-attaques-bancaires,官方示例（已标注）
+示例68,"« Votre location est annulée, merci de payer à nouveau »",短信,租赁平台（假预订）,假称预订被取消需重新付款（夏季高频话术，BNP 官方公布）,来源 BNP 官方安全警报页；'紧急+重复付款'话术特征,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例69,« Votre carte bancaire nécessite une validation immédiatement. »,短信,银行（境外支付）,假称银行卡需立即验证（境外消费场景话术，BNP 官方公布）,来源 BNP 官方安全警报页；'立即+验证'紧急话术,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例70,« Nous avons détecté une fraude sur votre compte »,短信,银行（假顾问）,假银行顾问话术：称检测到账户欺诈（BNP 官方公布）,来源 BNP 官方安全警报页；假顾问类标志性话术,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例71,"« Je suis bloqué, j'ai besoin d'aide rapidement »",短信,冒充亲友,冒充亲友求助话术（BNP 官方公布的夏季高频诈骗话术）,来源 BNP 官方安全警报页,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例72,"AVIS DE PASSAGE
+VEUILLEZ CONSIDERER LA RELATION DE VOTRE COUS.
+10,00€ à payer pour le stationnement
+Il ne vous reste plus qu'à payer cette somme
+Vous pouvez payer en espèces aux bornes de paiement de la stationnement
+Ce code sera également valide pour un paiement par téléphone
+QR CODE
+EN SCANNANT VOTRE CODE QR
+LE N° DE SUIVI DE VOTRE DOSSIER EST LE SUIVANT: 6Q0192938641",纸质,停车罚单,假停车罚单到货通知：夹在雨刮器/信箱的纸质单据，诱导扫 QR 码付费,La Poste 官方公布的假到货通知示例；10 欧停车费+QR 码是标志,是,laposte.fr phishing-hameconnage-definition,官方示例（已标注）
+示例73,[假罚单诈骗] 您在挡风玻璃上发现一张'违章通知'，附 QR 码可扫码缴款。扫描后被导向假支付站，盗取银行卡信息。,纸质,停车罚单,假罚单 QR 码诈骗：伪造罚单单据诱导扫码支付（BNP 官方公布的 quishing 案例）,来源 BNP 官方安全警报页；官方罚单不通过挡风玻璃 QR 码收款,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例74,"« Une fraude est en cours sur votre compte ! »
+[WhatsApp 视频/语音通话中的'假顾问'话术]",语音,银行（假顾问·WhatsApp）,WhatsApp 假顾问：称账户欺诈进行中，诱导共享屏幕后自行转账'保护资金',来源 BNP 官方安全警报页；真实银行不会通过 WhatsApp 主动来电,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例75,"Exemples de titres d'offres de faux placements publiés par BNP Paribas :
+- « Doublez vos économies en 6 mois ! »
+- « Investissement sécurisé à 100% avec un rendement exceptionnel »
+- « Le livret Vert crypto : alliez écologie et rendements exceptionnels »
+- « Certifié sans risque : faites fructifier vos économies »",邮件,虚假投资,假投资宣传语：超高收益+零风险承诺，诱导投资（BNP 官方公布的假投资诈骗标题）,来源 BNP 官方安全警报页；'高收益零风险'是诈骗标志,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例76,"Bonjour Papa, mon téléphone est cassé. Peux-tu m'envoyer un message sur Whatsapp http://wa.me/33679850795",短信,冒充亲人（孩子）,冒充子女'手机坏了'，附 wa.me 短链接诱导加 WhatsApp（BNP 官方公布的实例）,官方公布的实例；wa.me 短链+陌生号码是标志,是,mabanque.bnpparibas alertes-securite,官方示例（已标注）
+示例77,"Bonjour
+Votre carte bancaire a été bloquée.
+Motif : paiement suspect.
+Contactez immédiatement le : +33 4...",短信,银行（假止付）,假称银行卡因可疑支付被冻结，诱导立即回拨（Cybermalveillance 官方示例）,来源 smishing 官方页；真实银行不会短信通知冻结并给个人手机号,是,smishing-hameconnage-sms,官方示例（已标注）
+示例78,"« Salut c'est moi, tu ne m'as pas appelé. J'attends ton rappel au 0899 (…). »",短信,诱导回拨高价号码（0899）,假亲友/未接来电话术：诱导回拨 0899 高价号码（Arcep 官方公布）,来源 Arcep 官方；0899 为高价收费号码,是,arcep.fr fiche spam,官方示例（已标注）
+示例79,"« Bonjour, un colis vous attend depuis 10 jours et repartira si vous ne venez pas le chercher d'ici demain. Merci de nous rappeler au 0899 (...) »",短信,诱导回拨高价号码（0899）,假包裹滞留话术：诱导回拨 0899 高价号码（Arcep 官方公布）,来源 Arcep 官方；真实快递不会用 0899 催领,是,arcep.fr fiche spam,官方示例（已标注）
+示例80,"« Bonjour, ce sont les urgences de l'hôpital xyz. Votre conjoint vient d'avoir un grave accident. Merci de nous rappeler au 0899 (…). »",语音,假医院急诊,假医院急诊来电：谎称家人出车祸，诱导回拨 0899 高价号码（Arcep 官方公布）,来源 Arcep 官方；利用恐慌+家人安全诱导回拨,是,arcep.fr fiche spam,官方示例（已标注）
+示例81,"[冒充监管机构] L'Arcep vous appelle pour vous informer que votre identité a été usurpée ou que votre ligne va être suspendue ? Ceci est une fraude, raccrochez !",语音,冒充监管机构 Arcep,冒充 Arcep 告知'身份被盗用/线路将被停用'，诱导配合操作,Arcep 官方明示：此类来电均为诈骗，直接挂断,是,arcep.fr fiche spam,官方示例（已标注）
+示例82,"Bonjour,
+
+Je suis connu sous le nom de Kill Angel of Death et j'exécute toutes sortes de services en rapport avec le crime organisé- y compris la destruction de biens et l'enlèvement, voire le meurtre…",邮件,无（自称职业杀手）,冒充职业杀手，声称已受雇暗杀受害者，要求付费取消合同以勒索钱财,冒充杀手索要赎金，要求48小时内回复，典型的恐吓勒索钓鱼邮件,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/campagnes-de-messages-darnaque-au-tueur-a-gages,A级官方来源；原文斜体引用
+示例83,"Bonjour.
+
+Je suis surnommé Kill j'effectue toutes sortes de services -notamment en destruction de biens et de blessures…
+
+…l'ange de la mort",邮件,无（自称职业杀手）,冒充职业杀手'Kill'，以暗杀威胁勒索受害者,自称杀手，简短恐吓，典型的大规模群发勒索邮件,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/campagnes-de-messages-darnaque-au-tueur-a-gages,A级官方来源；原文斜体引用；变体
+示例84,Appelez-moi Masquek77.,邮件,无（自称职业杀手）,以杀手代号'K77'开头，后续以暗杀威胁勒索,奇怪的杀手代号开头，典型的恐吓钓鱼邮件变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/campagnes-de-messages-darnaque-au-tueur-a-gages,A级官方来源；原文斜体引用；变体
+示例85,"Bonjour,
+Appelez-moi KILL-VIC-32.
+J'effectue toutes sortes de missions impossibles en rapport avec l'élimination physique de toutes les personnes gênantes pourvu qu'on sollicite mes services.
+Les raisons principales sont souvent le rejet de la contradiction, l'hypocrisie, la méchanceté, le refus de l'acceptation de contradiction, des raisons politiques, économiques, sociales, sentimentales ou plus spécifiquement l'amour ou de la concurrence sur le lieu de travail.
+Cette semaine, un client aux initiales HL-FR m'a contacté avec toutes vos coordonnées et m'a confié la secrète mission de vous éliminer physiquement en vous administrant un puissant poison : Toxine botulique ou par éclaboussement à de L'azote (élément chimique de numéro atomique 7, de symbole N) sur votre visage. Pratique par défaut – rapidement, douloureusement pour la vie. Sans trop de bruit, ceci pour une forte somme d'argent déjà disponible pour être déposé sur mon compte juste après mon forfait.
+J'ai à ma possession toutes les informations nécessaires sur vous, sur vos itinéraires ; heures de déplacements, lieux de loisirs, sites et lieux couramment visités etc… Il ne me reste plus qu'à passer à l'acte.
+Mais dans mes recherches sur vous, je me suis rendu compte que vous êtes une bonne personne sans histoire, sans problème et que c'est à tort qu'on vous accuse.
+Bref, maintenant je vous propose de me faire une proposition afin d'être inactif et annuler ce projet d'assassinat à condition que je reçoive une somme importante ou méritante, dans le cas contraire je remplirai ma mission sans faille.
+Si vous souhaitez collaborer, en plus de mon inactivité, je vous fournirai toutes les informations sur le client et les preuves réelles et le mobile pour lequel cette personne vous en veut tant.
+PS : Vous pouvez essayer de vous plaindre à la police (mauvaise idée) je ne pense pas qu'elle puisse résoudre votre problème, n'oubliez pas de savoir que je vous contacte via une boîte mail piratée, pas la peine d'essayer de me localiser… veuillez me répondre sur mon email ci-dessous si vous souhaitez coopérer, vous avez un délai de 48 heures pour me donner votre décision.
+A bientôt !",邮件,无（自称职业杀手KILL-VIC-32）,冒充职业杀手，声称已受雇用肉毒杆菌毒素暗杀受害者，要求付费取消合同并威胁48小时时限,详细描述暗杀方式（肉毒杆菌毒素/氮气），声称掌握受害者行踪，要求48小时内付费，典型大规模恐吓勒索邮件,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/campagnes-de-messages-darnaque-au-tueur-a-gages,A级官方来源；原文斜体引用；变体
+示例86,"Sujet : Programme de soutien aux victimes de fraude
+
+Contact : contact@cybermalveillance.gouv.fr
+Répondre à : fabien.duhamel.cybermalveillance@outlook.com
+
+Bonjour,
+Nous avons remarqué que votre adresse e-mail figure dans notre base de données des personnes victimes de fraude. Si cela est bien le cas, veuillez nous le confirmer en nous répondant afin que nous puissions prendre les mesures nécessaires pour vous aider.
+Nous avons mis en place un programme de remboursement pour les victimes d'arnaques, et nous souhaitons vous offrir notre assistance dans cette démarche. Votre confirmation nous permettra de vous inclure dans ce programme et de travailler ensemble pour récupérer vos pertes.
+Nous sommes là pour vous soutenir, n'hésitez pas à nous contacter dès que possible.
+Cordialement,
+Fabien Bourbon
+Agent de Cybermalveillance",邮件,Cybermalveillance.gouv.fr,冒充Cybermalveillance.govfr工作人员，声称受害者在诈骗数据库中，诱导回复以实施进一步诈骗,回复地址为outlook.com而非官方gouv.fr域名，冒充政府机构诱导回复确认,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/alerte-messages-frauduleux-usurpant-identite-cybermalveillance-gouv-fr-2,A级官方来源；原文斜体引用
+示例87,"De : support@gouvfrance.info
+Objet : Suite à une Fraude Identifiée
+
+M. XXXX XXXX
+
+Je me permets de vous contacter en tant que expert contre la fraude pour CyberMalveillance, un service soutenu par le gouvernement français et dédié à l'accompagnement des victimes de cyberfraudes.
+Notre site d'internet : https://www.cybermalveillance.gouv.fr/
+Il semblerait que vous ayez été victime d'une arnaque en ligne. Nous souhaitons vous apporter notre aide pour résoudre cette situation et récupérer vos fonds, dans la mesure du possible. Afin d'avancer sur votre dossier, nous avons besoin de quelques informations supplémentaires.
+Je vous prie de bien vouloir remplir les documents que je vous ai envoyés en pièce jointe, les signer et me les renvoyer par email dans les plus brefs délais. Ces informations sont essentielles pour que nous puissions continuer à vous aider efficacement.
+Si vous avez des preuves supplémentaires concernant l'incident, telles que des emails suspects, des relevés bancaires ou toute autre pièce justificatif, merci de bien vouloir nous les transmettre afin que nous puissions les analyser et mettre en place les démarches nécessaires.
+Nous restons à votre disposition pour toute question complémentaire et vous tiendrons informée de l'avancement de votre dossier.
+Dans l'attente de vos documents, je vous prie d'agréer, XXXX XXXX, l'expression de mes salutations distinguées.
+Cordialement,
+David Devaux
+Agent Cyber Malveillance
+Cybermalveillance.gouv.fr",邮件,Cybermalveillance.gouv.fr,冒充Cybermalveillance.govfr反欺诈专家，以赔偿受害者损失为由要求填写并回传附件表格，骗取个人及银行信息,发件人域名为gouvfrance.info而非gouv.fr，要求回传含银行信息的附件，典型赔偿诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/alerte-campagne-de-messages-frauduleux-usurpant-lidentite-de-cybermalveillance-gouv-fr-202412,A级官方来源；原文斜体引用
+示例88,"Nous avons remarqué que votre parcours et votre CV ont été recommandés par plusieurs agences de recrutement en ligne, nous aimerions donc vous proposer un emploi à temps partiel que vous pourrez exercer pendant votre temps libre. Notre travail est simple : nous évaluons simplement vos hôtels préférés. Il n'y a pas de limite de temps et vous pouvez réaliser l'évaluation à domicile. Les salaires journaliers varient de 300 à 1 000 euros, tous les salaires sont payés le même jour. Si vous souhaitez participer, veuillez nous contacter via WhatsApp: +337XXXXXXXX",短信,无（虚假招聘）,以酒店评估兼职工作为诱饵，日薪300-1000欧元，诱导加WhatsApp联系，实为任务诈骗,日薪异常高且无需经验，诱导加WhatsApp联系，典型'任务诈骗'招工钓鱼,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-offres-emploi-operateur-marketing-internet,A级官方来源；原文斜体引用
+示例89,"Bonjour! Nous avons remarqué que votre expérience professionnelle et votre CV ont été recommandés par plusieurs agences de recrutement en ligne. C'est pourquoi nous aimerions vous proposer un emploi à temps partiel que vous pourrez exercer pendant votre temps libre. Notre travail est simple : il vous suffit de consacrer 60 à 120 minutes par jour pour accomplir le travail. Il n'y a pas de limite de temps et vous pouvez réaliser l'évaluation à domicile. Les salaires journaliers varient de 100 $ à 1 000 $, tous payés le même jour. Si vous souhaitez participer, merci de nous contacter via WhatsApp : +wa.me/337XXXXXXXX",短信,无（虚假招聘）,以远程兼职评估工作为诱饵，日薪100-1000美元，诱导加WhatsApp联系，实为任务诈骗,以美元计价且日薪异常高，诱导加WhatsApp，典型招工钓鱼变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-offres-emploi-operateur-marketing-internet,A级官方来源；原文斜体引用；变体
+示例90,"Bonjour, votre CV a ete approuve par notre societe, emploi en ligne a temps partiel, 60-2000EUR jour Pour plus d'informations veuillez contacter t.me/XXXX",短信,无（虚假招聘）,声称CV已通过审核，日薪60-2000欧元，诱导加Telegram联系,语法错误（'a ete approuve'），日薪范围夸张，诱导加Telegram，典型招工钓鱼,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-offres-emploi-operateur-marketing-internet,A级官方来源；原文斜体引用；变体
+示例91,"En raison du développement des affaires et de l'expansion du marché, Flairwork a un besoin urgent d'un grand nombre de travailleurs à temps partiel. vteamwork.net ; Flair work
+Introduisez de nouveaux amis pour rejoindre le travail, vous pourrez obtenir une prime de parrainage d'employé, 5USD par personne.",短信,Flairwork/vteamwork.net（虚假平台）,以Flairwork平台招聘为幌子，声称推荐好友可得5美元推荐奖金，实为传销式任务诈骗,虚假招聘平台域名vteamwork.net，推荐奖金模式，典型任务诈骗推广短信,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-offres-emploi-operateur-marketing-internet,A级官方来源；原文斜体引用
+示例92,"Bonjour, vous êtes chez vous ?",短信,无（包裹配送钓鱼前奏）,仅发送问候短信试探是否有人回复，一旦回复后续将发送含恶意链接的包裹配送钓鱼短信,2025年夏大规模发送的自动化钓鱼前奏短信，用于绕过运营商防钓鱼链接过滤,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-phishing-ra26,A级官方来源；2025年新型自动化钓鱼短信
+示例93,"AMENDES.GOUV : Veuillez noter que vous avez une amende de stationnement impayée. Pour éviter toute majoration, régularisez votre situation le plus rapidement possible en utilisant le lien ci-dessous",短信,Amendes.gouv.fr（法国罚单网站）,冒充罚单网站，声称有未缴停车罚款，要求尽快点击链接缴纳以免增加罚款,税务局官方明确指出DGFiP从不发送催缴短信，此为典型罚单钓鱼短信,是,https://www.impots.gouv.fr/actualite/attention-aux-arnaques,A级官方来源（impots.gouv.fr）；原文斜体引用
+示例94,Assurance Maladie : Votre nouvelle carte vitale est disponible. Remplissez ce formulaire afin de rester couvert :…,短信,Assurance Maladie / Ameli（法国医保）,冒充医保机构，声称新医保卡已可用，诱导点击链接填写表格以获取个人及银行信息,医保官方明确从不要求通过链接更新医保卡，医保卡无有效期,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文斜体引用
+示例95,Ameli : Votre carte vitale arrive à expiration. Veuillez la mettre à jour sous 48h via :…,短信,Ameli（法国医保在线平台）,冒充Ameli，声称医保卡即将到期，要求48小时内通过链接更新,医保卡无有效期，不存在到期更新；制造紧迫感，典型smishing,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文斜体引用；变体
+示例96,"Info Ameli : Expiration de votre carte vitale, à mettre a jour impérativement…",短信,Ameli（法国医保在线平台）,冒充Ameli通知，声称医保卡到期必须更新，诱导点击恶意链接,医保卡无有效期；'Info Ameli'发件人格式不官方，语法错误（'a jour'）,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文斜体引用；变体
+示例97,ASSURANCE MALADIE : Renouvellement obligatoire de votre Carte Vitale à effectuer avant le…,短信,Assurance Maladie（法国医保）,冒充医保机构，声称医保卡必须更新，制造紧迫感诱导点击链接,医保卡无有效期且从不通过短信要求更新；'ASSURANCE MALADIE'大写冒充官方格式,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文斜体引用；变体
+示例98,"OBJET : AVIS DE NOTIFICATION FISCALE
+
+La Direction générale des finances, représentée par Mr BERNARD POIRIER, chef du Service fédéral du contrôle financier, qui est responsable de la vérification des déclarations fiscales des contribuables et de la gestion des comptes publics, des recettes et des dépenses (fédérations, confédérations, communes fédérales , etc.) Vous envoie cet e-mail pour vous informer qu'il existe plusieurs accusations de fraude fiscale à votre encontre, notamment en relation avec :
+– IMPOTS
+– IMPÔTS SUR LA FORTUNE
+– IMMOBILIER
+– COTISATIONS DE SÉCURITÉ SOCIALE
+– TAXES D'HABITATION ET TAXES FONCIERES
+Vous avez effectivement commis cette évasion fiscale conformément aux dispositions des articles 156 à 168 du Code général des impôts. En conséquence, l'administration fiscale sanctionne toute personne qui ne paie pas ces impôts.
+Cet avis porte sur le revenu net et total du contribuable, qui a été déclaré et non déclaré.
+Après avis de la Commission des offensives fiscales, le Service fédéral des impôts prendra toutes les mesures nécessaires pour vous poursuivre et vous traduire en justice. Evidemment, vous risquez jusqu'à cinq ans de prison et une amende de 500 000 €, selon le consensus des lois fiscales allemandes.
+A compter de cette notification, vous aurez 48 heures pour payer la somme de 7 108,00 € correspondant à votre imposition. A l'issue de ce délai, nous sommes dans l'obligation de transmettre votre dossier au commissaire-priseur afin que vos biens puissent être légalement saisis.
+VEUILLEZ NOTER: Pour plus details concernant votre paiements veuillez transmettre votre lettre à l'adresse du bureau ci-dessous.",邮件,IGF / Direction générale des finances（法国财政总署）,冒充财政监察总局，指控受害者逃税，威胁48小时内缴纳7108欧元否则起诉和查封财产,引用'德国税法'等荒谬内容，要求48小时内付款至私人账户，真实税务检查从不通过邮件通知,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-accusation-fraude-fiscale,A级官方来源；原文斜体引用
+示例99,"Objet : AVIS D'IMPÔT
+
+Madame, Monsieur,
+Nous, la Direction Générale des Finances, sous la demande de M. BRUNO ROUSSELET, Délégué du directeur général des finances publiques et sous la supervision générale de Madame MARIE-CHRISTINE LEPETIT chef de contrôle financier, s'occupe de la gestion financière et de la tenue de la comptabilité des fonds publics.
+Elle contrôle également comme la recevabilité et la conformité des déclarations fiscales des contribuables, particuliers professionnels, afin de lutter contre les fraudes fiscales.
+Cependant, nous vous informons qu'il existe plusieurs accusations de fraudes fiscales à votre encontre.
+Affaire vous concernant :
+– Impôt – impôt sur le Revenu (IR)
+– La fiscalité du patrimoine – Impôt sur la fortune immobilière (IF)
+– La taxe d'habitation, la taxe foncière, la contribution économique territoriale
+Vous avez effectivement commis une infraction ou évasion fiscale, conformément aux dispositions de l'article 1741 du Code Général des Impôts (CGI) définit et sanctionne pénalement le délit général de fraude fiscale, en conséquence l'administration fiscale sanctionne toute personne qui ne règle pas ces impôts.
+Cet avis porte sur le revenu net et total du contribuable qui a été déclaré et non-déclaré.
+Le Service Fédéral des impôts prendra toute mesure nécessaire et importante pour vous traduire en justice, en plus des sanctions fiscales, vous risquez les 2 peines suivantes : 500 000 € d'amende et 5 ans d'emprisonnement.
+Dès réception de cet avis d'impôt, vous avez un délai de 72 heures pour régler la somme de 4 819,00 € à votre imposition. Passé ce délai, nous serons dans l'obligation de transmettre votre dossier à la Commission des infractions fiscales afin que vos biens puissent être saisis légalement.
+Veuillez-noter : nous attendons un accusé de réception ou votre message pour vous confirmer les références bancaires pour le paiement.
+INFOS : Pour toute réponse, pour toute information, contactez-nous au mail suivant :
+E-MAIL : publiquesfina***@gmail.com",邮件,DGFiP / Direction Générale des Finances（法国财政总署）,冒充财政总署，指控税务欺诈，威胁72小时内缴纳4819欧元否则查封财产，要求回复gmail邮箱获取银行信息,联系邮箱为gmail.com而非官方gouv.fr，要求72小时内付款，真实税务通知仅通过纸质挂号信寄送,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-accusation-fraude-fiscale,A级官方来源；原文斜体引用；变体
+示例100,Vérification de vos coordonnées !,邮件,"法国各银行（La Banque Postale, Crédit Agricole, BNP Paribas等）",以'验证您的账户信息'为邮件主题，诱导点击链接更新银行账户信息,银行官方从不通过邮件要求验证账户信息；DSP2相关钓鱼主题行,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行
+示例101,Action obligatoire – Activation de sécurité,邮件,法国各银行,以'强制操作-激活安全设置'为主题，借DSP2指令名义诱导点击链接更新安全信息,制造紧迫感，银行从不通过邮件要求'强制激活'安全设置；DSP2钓鱼主题行,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行；变体
+示例102,Sécurité : Veuillez mettre à jour vos informations personnelles,邮件,法国各银行,以'安全：请更新您的个人信息'为主题，诱导点击钓鱼链接,银行从不通过邮件要求更新个人信息；DSP2钓鱼主题行变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行；变体
+示例103,"CRÉDIT AGRICOLE
+Votre compte a été verrouillé, suivez ce lien pour débloquer vos accès: https://secure-creditagricole.fr
+à bientôt, Crédit Agricole",短信,Crédit Agricole（农业信贷银行）,冒充农业信贷银行，声称账户已锁定，诱导点击钓鱼链接解锁,链接域名为secure-creditagricole.fr而非官方credit-agricole.fr，典型银行smishing,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文截图引用
+示例104,Nous avons besoin de vérifier tous les comptes des clients de BNP. http://www.m-banque-bnpparibas.net/,短信,BNP Paribas（法国巴黎银行）,冒充BNP银行，声称需要验证所有客户账户，诱导点击钓鱼链接,链接域名为m-banque-bnpparibas.net而非官方bnpparibas.com，典型银行smishing,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文截图引用
+示例105,"De : E-service Clients BRED <BRED_secureID9593.noreply@zwina.com>
+Objet : Au sujet de la sécurité de votre compte! #Re-664366",邮件,BRED（法国银行）,冒充BRED银行客户服务，以账户安全为由发送钓鱼邮件,发件人域名为zwina.com而非BRED官方域名，典型银行钓鱼邮件头,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文截图引用；邮件头/主题行
+示例106,"de : ING DIRECT <csing@gmail.com>
+objet : Sécurité Comptes Client",邮件,ING DIRECT（荷兰国际银行法国分部）,冒充ING Direct银行，以客户账户安全为由发送钓鱼邮件,发件人使用gmail.com而非ing.fr官方域名，典型银行钓鱼邮件头,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文截图引用；邮件头/主题行
+示例107,"Vous etes admissible a recevoir un remboursement d'impot. Veuillez le confirmer sur le lien suivant: https://tinyurl.com/DGFIP-076921
+DGFIP
+STOP 36034",短信,DGFiP（法国税务总局）,冒充税务总局，声称符合退税条件，诱导点击短链接确认退税,使用tinyurl短链接而非impots.gouv.fr，语法错误，税务总局从不通过短信通知退税,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文截图引用
+示例108,"Bonjour,
+Vous étiez en 2018 redevable de la taxe d'habitation sur votre résidence principale et vous êtes titulaire d'un contrat de mensualisation pour le paiement de celle-ci.
+La réforme nationale de la taxe d'habitation permettra à 80% des foyers d'être exonérés de taxe d'habitation au titre de leur résidence principale au de bout de trois ans.
+Dès 2018, 80% des foyers ont vu leur taxe d'habitation sur leur résidence principale diminuer de 30%. Aujourd'hui en 2019 la taxe d'habitation diminue de 65%.
+Cette réforme concerne les foyers dont le revenu fiscal de référence n'excède pas une certaine limite fixée selon le nombre de parts du foyer de taxe d'habitation : par exemple, 27 000 € pour une personne seule, 35 000 € pour une personne seule avec un enfant, 43 000 € pour un couple sans enfant, 49 000 € pour un couple avec un enfant ou 55 000 € pour un couple avec deux enfants.
+Si vous payez votre taxe d'habitation par mensualisation ou à l'échéance et que vous remplissez les conditions pour être exonéré, vous pouvez demander un remboursement des mois précédents et une réduction du montant que vous payez chaque mois ou par échéance.
+En vue de cela vous pouvez prétendre au remboursement et à la réduction en remplissant correctement le formulaire en ligne de l'administration fiscale.
+Cliquez ici pour remplir mon formulaire
+Nous vous remercions de votre confiance.
+La Direction générale des Finances publiques.",邮件,DGFiP（法国税务总局）,冒充税务总局，以住房税改革退税为诱饵，诱导点击链接填写在线表格,邮件中'Cliquez ici'链接指向钓鱼网站，税务总局从不通过邮件发送退税表格链接,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文截图引用
+示例109,"Madame, Monsieur,
+Notre service procède à une mise à jour générale des dossiers pour particuliers.
+Pour celà nous vous prions de nous fournir vos documents personnels afin de les mettre dans votre dossier :
+DOCUMENTS DEMANDES:
+*Une copie conforme (scannée ou prise en photo) de votre pièce d'identité recto verso:",邮件,DGFiP（法国税务总局）,冒充税务总局，以更新个人档案为由，要求提供身份证正反面扫描件,税务总局从不通过邮件要求提供身份证扫描件；骗取身份信息用于后续诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文截图引用
+示例110,"Crit'Air :
+Nos agents ont constaté que votre véhicule n'était pas muni de la vignette règlementaire Crit'Air 2022 veuillez la récupérer sous peine de contravention dans les prochaines 48 h sur le lien ci-joint :",短信,Crit'Air / certificat-air.gouv.fr（法国环保贴纸）,冒充Crit'Air环保贴纸管理机构，声称车辆未贴合法贴纸，要求48小时内点击链接补办否则罚款,链接指向钓鱼网站，制造紧迫感和罚款威胁；官方仅通过certificat-air.gouv.fr办理,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/lhameconnage-a-la-vignette-critair,A级官方来源；原文截图引用；变体
+示例111,"CRITAIR : Nos agents ont constaté que vous n'étiez pas munis de la vignette règlementaire, veuillez la récupérer via : support-critair.fr",短信,Crit'Air（法国环保贴纸）,冒充Crit'Air，声称车辆未贴贴纸，诱导点击钓鱼网站support-critair.fr,官方域名为certificat-air.gouv.fr，support-critair.fr为钓鱼域名,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/lhameconnage-a-la-vignette-critair,A级官方来源；原文截图引用；变体
+示例112,"Obtenez votre vignette avant qu'elle ne disparaisse !
+Soyez respectueux de l'environnement et contribuez à la qualité de l'air en ville en obtenant votre certificat qualité de l'air dès maintenant. C'est simple, rapide et cela nous permettra de mieux gérer la circulation et de réduire la pollution
+Ensemble, faisons un pas de plus vers un environnement plus propre et plus sain pour tous.
+Commander ma vignette
+S'acquitter de ses droits et devoir contribue à préserver l'air que nous respirons. Cliquez sur le bouton ci-dessus pour obtenir votre certificat dès aujourd'hui et faire partie de la solution.",邮件,certificat-air.gouv.fr（法国环保贴纸官方网站）,仿冒官方Crit'Air网站邮件，以环保为由诱导点击'Commander ma vignette'按钮购买贴纸,邮件模仿官方certificat-air.gouv.fr视觉风格，但链接指向钓鱼网站；利用ZFE政策热点行骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/lhameconnage-a-la-vignette-critair,A级官方来源；原文截图引用
+示例113,"Bonjour,
+Nous vous informons que vous avez un remboursement en attente d'un montant de 169,20 € sur votre espace personnel.
+La carte enregistrée sur votre espace personnel n'a pas été créditée pour le motif suivant :
+Le numéro de mobile enregistré sur votre espace personnel ne correspond pas à celui associé à votre compte bancaire.
+Détails de remboursement:
+Référence : AWL-20/982KDJ
+Montant: 169,20 €
+Pour accepter le paiement rapide en ligne, cliquez sur le lien suivant et sélectionnez une méthode de remboursement.
+Modifier mes informations personnelles.
+Votre assurance maladie
+18 5375 Boulevard de Vaugirard, 75015 Paris, France",邮件,Assurance Maladie / Ameli（法国医保）,冒充医保机构，声称有169.20欧元待退款，因手机号与银行账户不匹配，诱导点击链接修改个人信息,使用精确金额制造可信度，诱导点击链接输入个人和银行信息；医保从不通过邮件通知退款,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文截图引用；变体
+示例114,"Compte Ameli : Après la dernière vérification de votre dossier d'assurance maladie, nous avons déterminé que vous recevrez un remboursement de 509.90 euros. Veuillez remplir votre formulaire de remboursement et confirmez-le via le lien ci-dessous : https://bit.ly/...",短信,Ameli（法国医保在线平台）,冒充Ameli，声称医保审核后将退款509.90欧元，诱导点击短链接填写退款表格,使用bit.ly短链接，声称精确退款金额，医保从不通过短信通知退款,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文截图引用
+示例115,"Madame/Monsieur,
+Dernier rappel avant suspension temporaire de vos droits au remboursement de la sécurité sociale AMELIE.
+Le renouvellement de votre carte vitale est disponible dans votre espace client sur le lien ci-dessous:
+https://mon-espace-assurance-maladie-renouvellement.fr
+ASSURANCE MALADIE",短信,Assurance Maladie / Ameli（法国医保）,冒充医保机构，声称最后提醒否则临时暂停社保报销权利，诱导点击链接更新医保卡,域名mon-espace-assurance-maladie-renouvellement.fr为钓鱼域名；医保卡无有效期,是,https://www.ameli.fr/assure/droits-demarches/principes/attention-appels-courriels-sms-frauduleux,A级官方来源（ameli.fr）；原文截图引用
+示例116,"AMELI: Dernière relance avant suspension de vos droits.
+Le renouvellement de vos droits est disponible via:
+https://service-santepublique-",短信,Ameli（法国医保在线平台）,冒充Ameli，声称最后催缴否则暂停权利，诱导点击钓鱼链接更新权利,链接域名service-santepublique-...非官方ameli.fr，制造暂停权利的紧迫感,是,https://www.ameli.fr/assure/droits-demarches/principes/attention-appels-courriels-sms-frauduleux,A级官方来源（ameli.fr）；原文截图引用；变体
+示例117,"Assurance Maladie : Dernière relance pour le renouvellement de votre carte vitale, veuillez suivre les instructions via https://mon-espace-vitale.info
+20/04/2024",短信,Assurance Maladie（法国医保）,冒充医保机构，最后催办医保卡更新，诱导点击mon-espace-vitale.info钓鱼网站,域名mon-espace-vitale.info非官方；官方医保卡无有效期，从不催办更新,是,https://www.ameli.fr/assure/droits-demarches/principes/attention-appels-courriels-sms-frauduleux,A级官方来源（ameli.fr）；原文截图引用；变体
+示例118,"Chère(e) Cliente,
+Pour obtenir votre nouvelle assurance vitale et ainsi assurer la prise en charge de vos frais de santé, veuillez renseigner certaines informations.
+Pour ce faire, veuillez cliquer sur le bouton ci-dessous et suivre les instructions qui vous seront données.
+Veuillez noter que sans cette confirmation, vos frais de ne seront plus couverts par votre ancienne assurance.
+Cordialement
+Obtenir ma carte",邮件,Assurance Maladie（法国医保）,冒充医保机构，以获取新医保卡为由要求填写信息，威胁不确认则旧保险不再报销,用语错误（'assurance vitale'而非'carte Vitale'，'assurance'而非'droits'），不专业的冒充邮件,是,https://www.ameli.fr/assure/droits-demarches/principes/attention-appels-courriels-sms-frauduleux,A级官方来源（ameli.fr）；原文截图引用
+示例119,"Nous avons le plaisir de vous informer que vous faites partie du programme de la loterie transnationale prise 12 pays européens et 16 pays africains et Américains; Ce qui fait de votre ticket loterie la plus grande loterie internationale incluant toutes les devises monétaires. Votre adresse électronique attribuée un numéro de ticket 69475600545-721 Avec le numéro de série : 53525/12 Votre numéro de chance gagnant: 2-15-18-24-43-8-12, où vous vous avez la chance de gagner dans la 2ème catégorie.
+Vous avez donc une sorte au profit de ce programme de la loterie transnationale dans le total de 860.000€ (Huit Cent Soixante Mille Euros) en liquidatif un fichier MYG/503/54/78. La cagnotte totale de 12.5 millions d'euros a été partagée (22) vingt-deux premiers gagnants dans cette catégorie. Notez que vous vous plaît que dans le cas de votre part dans le but de retirer la totalité de ces gains.
+Par ailleurs, une couverture de votre numéro de chance gagnant a été souscrite le 10/09/2020 qui par la banque à Londres, la société commerciale ou non pas de virements bancaires à Londres. L'ensemble économique la plus haute commission pour toute la licence à travers la loterie dans le monde entier et le non de toute les plateformes pour les actions.
+Pour rentrer en possession de votre gain, votre agent est votre en charge de l'ordre de votre FR-LR8717, et seront prêts à vous aider à recevoir les fonds. Ceci en raison pour un virement bancaire ou par un envoi par valise diplomatique sur votre compte bancaire soit par la voie postale en France.
+Pour être en possession de votre gain, vous devez prendre contact avec l'Notaire JACQUES BENOITZINGER, dont le numéro du portable vous sera envoyé par votre compte dans le but de le contacter en vue de la remise des fonds.
+Email : notaire.benoitzinger.benoit@gmail.com
+FORMULAIRE GAGNANT FRANÇAISE DES JEUX",邮件,Française des Jeux (FDJ) / 法国彩票,冒充法国彩票FDJ，声称中了86万欧元大奖，要求联系gmail邮箱的假公证人领取奖金,联系邮箱为gmail.com而非官方lfdj.com，要求联系'公证人'，彩票中奖者需自行兑奖且从不支付手续费,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroqueries-a-la-loterie,A级官方来源；原文截图引用
+示例120,"La méga millions, société de gestion des opérations internationales, et ses partenaires, sont heureux de vous informer que l'un des tickets de votre boîte e-mail a gagné des millions d'euros dans le tirage mega jackpot(xl) qui s'est tenue le 30 septembre 2020.
+Votre adresse e-mail attachée au numéro de série 755617220 a tiré les numéros chanceux 5-13-33-37-42, qui vous ont fait la partie de gagner la somme de 650 000€ (six cent cinquante mille euros), crédité au fichier G887/1/L/PRC.
+Vous êtes prié de contacter l'agent de réclamation de gain au plus tôt dans les 10 jours ouvrés suivant la notification de ce courrier. Tout non réclamé sera considéré comme abandonné.
+CONTACTEZ VOTRE AGENT DE REVENDICATION DE GAIN
+Nom: Mme GARY VANGOUTARY
+EMAIL: gary.vangoutary@gmail.com
+Réclamez votre prix et ouvrez une plateforme de compte de confidentialité et notre protocole de sécurité, et dites-lui immédiatement tous vos détails, numéro de compte bancaire, afin que votre conseiller Mr. MSW/DECE/AX/20.",邮件,Mega Millions（美国兆彩彩票）,冒充美国Mega Millions彩票，声称中了65万欧元，要求10个工作日内联系gmail邮箱的假代理人领奖,联系邮箱为gmail.com，法国居民不可能中美国Mega Millions，要求提供银行账号信息,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroqueries-a-la-loterie,A级官方来源；原文截图引用
+示例121,"Info ANTAI :
+Vous avez un retard de paiement de 68,00€, dossier référence 20023099.
+Consulter mon dossier d'infraction via : https://antai-amendes-gouv.org/",短信,ANTAI / Amendes.gouv.fr（法国交通罚单管理局）,冒充ANTAI罚单管理局，声称有68欧元滞纳金，诱导点击antai-amendes-gouv.org钓鱼网站,域名为antai-amendes-gouv.org而非官方antai.gouv.fr或amendes.gouv.fr，典型罚单钓鱼短信,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-phishing-menace-predominante-tous-publics,A级官方来源；原文截图引用
+示例122,"Il ne s'agit pas d'une blague ou d'un canular, encore moins d'une plaisanterie. Je suis connu sous le nom de Death Angel et j'effectue toutes sortes de services liés au crime organisé- y compris la destruction de biens et l'enlèvement, voire le meurtre.
+Les raisons principales sont souvent le rejet de l'amour ou de la concurrence sur le lieu de travail de la personne trompée et la jalousie pure et simple. Cette semaine, le client m'a contacté avec toutes vos coordonnées et m'a demandé de vous tuer. Ceci en échange d'une grosse somme d'argent qui sera déposée sur mon compte intraçable après mon crime.
+Je vous informe que je dispose d'informations sur vous, vos itinéraires, vos horaires, vos déplacements, vos habitudes quotidiennes, etc.
+Vous avez donc la possibilité de me proposer de ne rien faire. Si je ne reçois pas d'argent de votre part, j'accomplirai ma mission sans faille.
+Si vous voulez coopérer, en plus de mon inaction, je vous donnerai toutes les informations sur le client et la raison pour laquelle cette personne en a après vous.
+PS ... Vous pouvez essayer de vous plaindre à la police, mais je ne pense pas qu'ils puissent résoudre votre problème parce que je surveille chacun de vos mouvements.
+Envoyez un courriel à [email protégé]@gmail.com
+Vous avez 48 heures pour prendre une décision.
+L'ange de la mort",邮件,无（自称Death Angel职业杀手）,自称'Death Angel'杀手，声称已受雇杀害受害者，要求48小时内付费取消合同,声称掌握受害者行踪，联系邮箱为gmail.com，48小时时限威胁，典型大规模杀手勒索邮件,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/campagnes-de-messages-darnaque-au-tueur-a-gages,A级官方来源；原文截图引用
+示例123,"De : Direction Générale des finances publiques <service@dgfip-impots.com>
+Objet : Documents nécessaires pour compléter votre dossier",邮件,DGFiP（法国税务总局）,冒充税务总局发送邮件，主题为'完善档案所需文件'，骗取个人文件,发件人域名为dgfip-impots.com而非官方dgfip.finances.gouv.fr，典型税务钓鱼邮件头,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文截图引用；邮件头/主题行
+示例124,"Madame, Monsieur,
+Notre service procède à une mise à jour générale des dossiers pour particuliers.
+Pour celà nous vous prions de nous fournir vos documents personnels afin de les mettre dans votre dossier :
+DOCUMENTS DEMANDES:
+*Une copie conforme (scannée ou prise en photo) de votre pièce d'identité recto verso:
+*Vous devez télécharger l'application mobile officielle Impots.gouv et scanner le code QR ci-joint pour confirmer votre identité",邮件,DGFiP（法国税务总局）,冒充税务总局，以更新档案为由要求提供身份证正反面扫描件并扫码确认身份,税务总局从不通过邮件要求身份证扫描件；骗取身份信息用于后续诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文截图引用；变体
+示例125,"Nous vous informons que vous avez un remboursement en attente d'un montant de 169,20 € sur votre espace personnel.
+La carte enregistrée sur votre espace personnel n'a pas été créditée pour le motif suivant :
+Le numéro de mobile enregistré sur votre espace personnel ne correspond pas à celui associé à votre compte bancaire.
+Détails de remboursement:
+Référence : AWL-20/982KDJ
+Montant: 169,20 €
+Pour accepter le paiement rapide en ligne, cliquez sur le lien suivant et sélectionnez une méthode de remboursement.
+Modifier mes informations personnelles.",邮件,Assurance Maladie（法国医保）,冒充医保机构，以退款169.20欧元因手机号不匹配为由，诱导点击链接修改个人信息,精确金额+参考编号制造可信度，医保从不通过邮件通知退款或要求修改手机号,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-assurance-maladie-ameli,A级官方来源；原文截图引用；变体
+示例126,"Objet : Suite à une Fraude Identifiée
+
+M. XXXX XXXX
+
+Je me permets de vous contacter en tant que expert contre la fraude pour CyberMalveillance, un service soutenu par le gouvernement français et dédié à l'accompagnement des victimes de cyberfraudes.
+Il semblerait que vous ayez été victime d'une arnaque en ligne. Nous souhaitons vous apporter notre aide pour résoudre cette situation et récupérer vos fonds, dans la mesure du possible. Afin d'avancer sur votre dossier, nous avons besoin de quelques informations supplémentaires.",邮件,Cybermalveillance.gouv.fr,冒充Cybermalveillance反欺诈专家，声称受害者曾遭遇诈骗，以追回资金为由要求提供更多信息,发件人为support@gouvfrance.info而非gouv.fr官方域名，典型赔偿诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/alerte-campagne-de-messages-frauduleux-usurpant-lidentite-de-cybermalveillance-gouv-fr-202412,A级官方来源；原文斜体引用；变体
+示例127,Portail.dgfip.finances.fr,邮件,DGFiP（法国税务总局）,伪造发件人显示名为'Portail.dgfip.finances.fr'，冒充税务总局发送钓鱼邮件,税务总局官方域名为dgfip.finances.gouv.fr，此显示名为伪造,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文引号引用；伪造发件人名称
+示例128,@impots-gouv.fr,邮件,impots.gouv.fr（法国税务网站）,伪造发件人邮箱后缀为@impots-gouv.fr，冒充税务网站发送钓鱼邮件,官方税务网站域名为impots.gouv.fr而非impots-gouv.fr，连字符变体为典型域名伪造,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文引号引用；伪造域名
+示例129,[SERVICES – Clientèle ] Nouveaux services : Votre authentification,邮件,"法国各银行（La Banque Postale, Crédit Agricole等）",以'客户服务-新服务：您的身份验证'为邮件主题，诱骗客户点击链接进行身份验证,冒充银行客户服务部门，以新服务为由要求身份验证，典型DSP2银行钓鱼主题行,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行
+示例130,Nouvelle réglementation DSP2,邮件,法国各银行,以'DSP2新法规'为邮件主题，借欧洲支付服务第二指令名义诱导客户更新安全信息,利用真实法规DSP2作为钓鱼借口，银行从不通过邮件通知法规变更,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行
+示例131,"Nous avons le plaisir de vous informer du lancement du programme de la Loterie internationale, proposée dans plus d'une douzaine de pays européens. Il s'agit d'un programme de marketing direct qui vise à promouvoir l'image des entreprises participantes, et à remercier les utilisateurs d'Internet pour leur fidélité.
+Votre adresse e-mail a été tirée au sort dans une base de données mondiale, parmi 25 000 000 d'adresses e-mail, et figure parmi les 5 000 adresses e-mail chanceuses sélectionnées pour participer à notre tirage au sort.
+Votre adresse e-mail a été attribuée au numéro chance : 2-15-18-24-43-8-12, avec le numéro de série 53525/12. Ces numéros vous ont valu de gagner dans la catégorie chance n°2.
+Vous vous êtes donc vu attribuer la somme forfaitaire de 860 000 € (Huit cent soixante mille euros), sous le fichier de référence MYG/503/54/78.
+Pour réclamer votre gain, veuillez contacter notre agent des réclamations agréé, dès réception de ce message, en lui fournissant vos informations personnelles complètes :",邮件,EuroMillions / MyMillion（欧洲百万彩票）,冒充欧洲百万彩票，声称邮箱被抽中赢得86万欧元，要求联系代理人提供个人信息领奖,未购买彩票却中奖，要求提供个人信息给'授权代理人'，彩票从不通过邮件通知中奖,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroqueries-a-la-loterie,A级官方来源；原文截图引用；变体
+示例132,"Objet : Règlement loyer
+
+Bonjour,
+sauf erreur de notre part, nous restons dans l'attente du règlement de votre loyer mensuel.",邮件,Propriétaire/bailleur / service comptabilité,冒充房东或会计部门，以等待房租缴纳为由催促付款，诱导回复以获取银行信息,邮件无具体房东姓名、地址或租户身份，群发性质；催促付款并要求回复，典型租金转账诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文斜体引用
+示例133,"Objet : Re: RELANCE POUR LOYER IMPAYÉ
+
+Bonjour,
+A ce jour et sauf erreur de notre part, nous vous rappelons que nous n'avons toujours pas réceptionné votre paiement pour le loyer de ce mois.
+Si vous l'avez deja réglé, merci de nous joindre une preuve de paiement (bordereau, ordre de virement).",邮件,Propriétaire/bailleur / service comptabilité,冒充房东催缴欠租，要求提供付款证明，诱导回复以实施进一步诈骗,无具体租赁地址和房东信息，催促提供付款证明，典型租金转账诈骗变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文斜体引用；变体
+示例134,"Objet : Quittance de loyer
+
+Bonjour Mme / Mr
+Sauf erreur de notre part, nous restons dans l'attente du règlement de votre loyer mensuel.
+Merci de bien vouloir régulariser votre situation à réception de votre mail.
+Nous vous informons par la même occasion de la mise à jour de nos coordonnées bancaires.
+En vôtre aimable règlement
+N'hésitez pas à répondre directement à ce mail pour toute demande d'informations complémentaires.
+Vous en souhaitant bonne réception de la présente.
+Bien cordialement,",邮件,Propriétaire/bailleur,冒充房东，以等待房租为由通知银行账户信息更新，诱导租户将租金汇至诈骗账户,以银行信息更新为幌子，要求回复邮件，无具体房东身份信息，典型租金转账诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文斜体引用
+示例135,"Objet : << RAPPEL DE PAIEMENT >>
+
+Madame, Monsieur,
+À ce jour et sauf erreur de notre part, nous vous rappelons que nous n'avions toujours pas réceptionné votre paiement pour le loyer du mois.
+En effet, nous venons par ce message vous informer de la mise à jour de nos références bancaire.
+Aussi, nous vous remercions de procéder le plus rapidement possible pour régler cette échéance afin de régulariser votre situation…",邮件,Propriétaire/bailleur,冒充房东以付款提醒为由，通知银行账户参考更新，催促尽快付款至新账户,大写<< RAPPEL DE PAIEMENT >>制造紧迫感，通知银行信息更新，典型租金转账诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文斜体引用；变体
+示例136,"Objet : Locataire
+
+Bonjour,
+pour cette nouvelle année nous vous informons qu'une mise à jour a été effectué au sein de notre établissement de ce fait nous avons apporté quelques changements au niveau de la comptabilité
+un nouveau RIB pour les paiements locatifs.
+Veuillez confirmer que vous avez bien reçu nos emails afin de vous envoyer vos coordonnées bancaires avant votre prochain paiement mensuel…",邮件,Propriétaire/bailleur / agence immobilière,冒充房东/中介，以新年会计系统更新为由通知新RIB，要求确认收到邮件以发送银行信息,语法错误（'a été effectué au sein de notre établissement'），要求确认收到邮件以继续诈骗，典型租金转账钓鱼,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文斜体引用；变体
+示例137,"Objet : changement de nos coordonnées bancaires.
+Madame, Monsieur,
+Nous vous prions de bien vouloir noter le changement de nos coordonnées bancaires. Vous trouverez ci-joint un relevé d'identité bancaire (RIB) d'ici la fin de mois. C'est sur ce compte que nous vous demandons désormais de bien vouloir effectuer vos paiements pour le règlement de votre loyer.
+Ps : veuillez confirmer la réception de notre note mail.
+Bien reception.
+Cordialement
+Le service comptabilité",邮件,Service comptabilité du bailleur,冒充房东会计部门，通知银行账户变更并附RIB，要求租户将租金汇至新账户,发件人为service.comptabilite62@gmail.com而非房东官方邮箱，要求确认收到邮件，典型租金转账诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文截图引用
+示例138,"De: ""COMPTABILITE.LOYER"" <chenoskidolbe90@gmail.com>
+Objet: PAIEMENT.EN.RETARD 🔴
+Bonjour,
+À ce jour, sauf erreur de notre part, nous restons dans l'attente du règlement de votre loyer.
+En effet, conformément au contrat de location signé, l'échéance pour le paiement étant attendu, nous vous remercions de procéder au plus vite au règlement afin de régulariser votre situation de façon amiable.
+Nous vous informons par la même occasion de la mise à jour de nos coordonnées bancaires.
+N'hésitez pas à répondre directement à ce courrier pour toute demande d'informations complémentaires.
+Cordialement,
+Service comptabilité",邮件,Service comptabilité du bailleur,冒充房东会计部门，以欠款为由催促付款并通知银行账户更新，使用gmail邮箱,发件人为gmail.com邮箱，使用红色圆圈emoji制造紧迫感，通知银行信息更新，典型租金转账诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/escroquerie-detournement-loyer,A级官方来源；原文截图引用；变体
+示例139,"Windows-Defender - Avertissement de sécurité
+L'ACCÈS A CE PC EST BLOQUÉ POUR DES RAISONS DE SÉCURITÉ
+Centre de sécurité Windows Defender
+Adresse IP: 89.83.xxx
+Emplacement: Meudon, France
+ISP: Bouygues Telecom SA
+L'accès à ce système a été bloqué pour des raisons de sécurité.
+Appeler l'assistance Windows: 0970 444 xx
+En fermant cette fenêtre, vous mettez vos informations personnelles en danger et votre inscription Windows risque d'être suspendue.",网页,Microsoft Windows Defender,仿冒Windows Defender安全警报弹窗，声称电脑被锁定，显示受害者IP和位置，诱导拨打付费技术支持电话,Microsoft从不通过弹窗显示电话号码；弹窗显示受害者IP和位置制造恐慌，0970号码为付费技术支持诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/arnaques-au-faux-support-technique/bacd4d3a-6d31-42ce-8699-7f60d566b765,A级官方来源；官方截图原文
+示例140,"L'accès à cet ordinateur a été bloqué pour des raisons de sécurité. Ne pas accéder ou redémarrer cet ordinateur. Ignorer cet avertissement critique peut entraîner la perte de données sur ce système. Veuillez contacter le support immédiatement afin qu'un ingénieur Apple puisse vous guider à travers les étapes de dépannage par téléphone.
+App: Ads.funandtrack(2).dll
+Threat Detected: Trojan Spyware
+L'accès à ce PC a été bloqué pour des raisons de sécurité.
+Contacter l'assistance Apple: 09 70 18 xx",网页,Apple / Centre de sécurité Apple Defender,仿冒Apple安全警报弹窗，声称检测到木马间谍软件，电脑被锁定，诱导拨打假Apple支持电话,Apple从不通过浏览器弹窗显示支持电话；伪造的App名称Ads.funandtrack.dll为恶意软件，典型假技术支持诈骗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/arnaques-au-faux-support-technique/bacd4d3a-6d31-42ce-8699-7f60d566b765,A级官方来源；官方截图原文
+示例141,Appelez l'assistance Windows,网页,Microsoft Windows Support,在浏览器弹窗中显示'请致电Windows支持'，诱导用户拨打假技术支持电话,Microsoft从不主动在浏览器弹窗中显示支持电话号码；典型假技术支持诈骗弹窗,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/microsoft-cybermalveillancegouvfr-parquet-paris-arnaque-faux-support-technique,A级官方来源；原文引号引用
+示例142,Important !,邮件,法国各银行,以简单的'重要！'为邮件主题，诱骗客户打开邮件查看所谓紧急通知,银行从不使用模糊的'重要！'作为邮件主题；DSP2银行钓鱼主题行变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行
+示例143,Information,邮件,法国各银行,以'信息'为邮件主题，伪装成银行通知，诱骗客户打开邮件,银行从不使用模糊的'信息'作为邮件主题；DSP2银行钓鱼主题行变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行
+示例144,Consultez votre messagerie,邮件,法国各银行,以'查看您的邮箱'为邮件主题，诱骗客户点击链接查看所谓银行消息,银行从不使用'查看您的邮箱'作为邮件主题；DSP2银行钓鱼主题行变体,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；主题行
+示例145,DGFIP,邮件,DGFiP（法国税务总局）,伪造发件人显示名为'DGFIP'，冒充税务总局发送钓鱼邮件,税务总局官方发件人使用完整域名dgfip.finances.gouv.fr，而非仅缩写'DGFIP',是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-impots,A级官方来源；原文引号引用；伪造发件人名称
+示例146,Service client,邮件,法国各银行,伪造发件人显示名为'客户服务'，冒充银行客服发送钓鱼邮件,银行官方发件人使用完整域名，'Service client'为伪造发件人名称,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；伪造发件人名称
+示例147,Espace client,邮件,法国各银行,伪造发件人显示名为'客户空间'，冒充银行在线客户区发送钓鱼邮件,银行官方发件人使用完整域名，'Espace client'为伪造发件人名称,是,https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/hameconnage-bancaire-dsp2,A级官方来源；原文引号引用；伪造发件人名称
+示例148,"De : Service Relation Client Agricole <votreassistanceclient.agricole@t-online.de>
+Objet : ► Authentification forte
+
+Bonjour,
+
+[3] notification importantes sont diffusées à tous les clients de la part du CA. Veuillez vous connecter et suivre les différentes étapes.
+
+Pour le Visualisez --> ACCÉDER AU MESSAGE
+
+PS : En ignorant cet avis vous vous vous exposez à une interdiction temporaire de toutes vos opérations de débit.",邮件,Crédit Agricole,假邮件冒充CA要求完成强认证，威胁不点击将暂停扣款权限；发件人邮箱为t-online.de非CA域名,Crédit Agricole官方安全页公示的真实钓鱼邮件截图原文，发件域名为t-online.de而非credit-agricole.fr,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-email.html,A级官方来源
+示例149,"Bonjour,
+
+Votre site internet et l'application mobile ma Banque évoluent en conformité avec la réglementation européenne DSP2. Il vise à renforcer l'accès sécurisé à vos comptes en ligne. Ainsi, à compter du 25 septembre 2023, l'accès à votre espace client et à l'application mobile ma Banque requiert une authentification forte.
+
+afin de rester connecté à votre compte, veuillez activer votre numéro de téléphone à partir de votre espace client en cliquant ici.
+
+Votre numéro de téléphone portable est requis pour conserver votre connexion à votre compte. Pour toute question, veuillez communiquer avec la ligne d'assistance 01 43 63 23 00 (appel local sans frais).
+Merci pour votre confiance;
+Crédit Agricole.",邮件,Crédit Agricole,以DSP2强认证合规为名，诱骗客户点击假链接激活手机号，泄露账户凭据,Crédit Agricole官方安全页公示的DSP2钓鱼邮件截图原文，含语法错误'afin de rester'小写开头,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-email.html,A级官方来源
+示例150,Activation SécuriPass,邮件,Crédit Agricole,以激活SécuriPass强认证服务为主题行的钓鱼邮件,Crédit Agricole官方列出的当前常见钓鱼邮件主题行之一,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-email.html,A级官方来源
+示例151,Alerte de sécurité,邮件,Crédit Agricole,以安全警报为主题行的钓鱼邮件，制造紧迫感,Crédit Agricole官方列出的当前常见钓鱼邮件主题行之一,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-email.html,A级官方来源
+示例152,Refonte de site,邮件,Crédit Agricole,以网站改版为主题行的钓鱼邮件，诱骗重新登录验证,Crédit Agricole官方列出的当前常见钓鱼邮件主题行之一,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-email.html,A级官方来源
+示例153,"De : Lcl Info.lcl.sav@gmail.com
+Objet : [Info] Vous êtes en ligne avec un conseiller lcl
+
+Vous êtes en ligne avec un conseiller du Crédit Lyonnais
+
+Bonjour Madame (NOM PRENOM),
+
+Suite à la détection d'une activité inhabituelle sur votre compte, notre banque applique une procédure très stricte pour garantir votre sécurité.
+
+Nous vous demandons de collaborer avec notre conseiller en ligne pour effectuer un virement. Cette opération est nécessaire pour sécuriser vos fonds.
+
+Voici votre RIB :
+
+Que faire maintenant :
+1. Suivre les indications du conseiller anti-fraude afin que votre compte soit en sécurité.
+2. Surveillez vos comptes via notre application mobile ou en ligne pour toute transaction suspecte.
+3. En attendant, par mesure de précaution, nous avons temporairement limité l'usage de votre carte.
+
+Nous vous prions de nous excuser pour la gêne occasionnée et vous assurons que votre sécurité est notre priorité.
+
+Merci de votre coopération.
+L'équipe Crédit Lyonnais
+
+Pour toute autre question, contactez-nous à l'adresse suivante : anti-fraude@lcl.fr",邮件,LCL (Crédit Lyonnais),假邮件声称检测到异常活动，引导受害者与假'反欺诈顾问'协作转账到假RIB以'保护资金',LCL官方安全页公示的钓鱼邮件截图原文，发件人为gmail.com而非lcl.fr，属典型假顾问诈骗,是,https://www.lcl.fr/mag/tendances/phishing-que-faire-en-cas-de-reception-dun-e-mail-frauduleux-,A级官方来源
+示例154,"De : Lcl service.lcl.sav@gmail.com
+Objet : [Action Requise] Confirmation d'annulation de paiement
+
+Confirmation d'annulation de paiement
+
+Bonjour Madame (NOM PRENOM),
+
+Nous vous confirmons l'annulation de votre paiement récent. Cette opération a été traitée avec succès et aucun montant n'a été débité de votre compte.
+
+Pour renforcer la sécurité de vos fonds, nous vous demandons de cesser l'utilisation de votre carte pour tout paiement en ligne. Votre carte reste toutefois fonctionnelle pour les transactions dans les commerces de proximité.
+
+Cette mesure est essentielle pour garantir la sécurité de vos fonds. Nous vous remercions de votre compréhension et coopération.
+
+Détails de l'annulation :
+1. Commerçant :
+2. Montant :
+3. Lieu :
+4. Date de l'opération :
+
+Merci de votre coopération.
+L'équipe Credit Lyonnais",邮件,LCL (Crédit Lyonnais),假邮件声称已取消一笔支付，要求受害者停止线上用卡并点击链接填写所谓'取消详情'以窃取卡信息,LCL官方安全页公示的钓鱼邮件截图原文，发件人为service.lcl.sav@gmail.com,是,https://www.lcl.fr/mag/tendances/phishing-que-faire-en-cas-de-reception-dun-e-mail-frauduleux-,A级官方来源
+示例155,"[LCL] - Alerte Sécurité
+Une tentative de paiement non reconnue a été détectée sur votre compte.
+
+Montant : 693,45 €
+
+Bénéficiaire : Inconnu
+
+Si vous n'êtes pas à l'origine de cette opération, merci de contacter immédiatement notre service de sécurité au 0189623343.
+
+Client :",短信,LCL,假SMS声称检测到693.45欧元异常支付，诱导受害者拨打假安全号码0189623343,LCL官方smishing指南页公示的真实钓鱼SMS截图原文,是,https://www.lcl.fr/mag/tendances/le-smishing-ne-tombez-pas-dans-le-piege-de-la-fraude-par-sms,A级官方来源
+示例156,"bonjour maman/papa.
+mon téléphone est cassé. c'est mon nouveau numéro de téléphone. +33 [masqué] vous pouvez enregistrer ceci. envoie moi un message via whatsapp.",短信,受害者子女身份,冒充子女发短信称手机坏了换号，诱导父母WhatsApp联系后以紧急用钱为由诈骗转账,LCL官方公示的假SMS截图原文（来源Cybermalveillance.gouv.fr）,是,https://www.lcl.fr/mag/tendances/coucou-maman-papa-jai-un-probleme-ne-tombez-pas-dans-le-piege-de-cette-arnaque-par-sms,A级官方来源
+示例157,"Coucou maman, c'est moi. J'ai eu un problème avec mon numéro de téléphone, c'est mon numéro temporaire.
+Envoie moi un message sur WhatsApp, sur ce numéro le plus rapidement possible ! Je ne pourrai plus te répondre ici comme je n'ai pas de crédit, je dois te parler de quelque chose...",短信,受害者子女身份,冒充子女称临时号码、无话费，诱导父母转移到WhatsApp后实施情感诈骗,LCL官方公示的假SMS截图原文（来源Cybermalveillance.gouv.fr）,是,https://www.lcl.fr/mag/tendances/coucou-maman-papa-jai-un-probleme-ne-tombez-pas-dans-le-piege-de-cette-arnaque-par-sms,A级官方来源
+示例158,"Papa, j'ai perdu mon téléphone c'est mon nouveau numéro enregistre le et envoie moi un message à ce numéro sur Whatsapp dès que ta reçu mon message.",短信,受害者子女身份,假子女SMS诱导父母在WhatsApp加新号码，后续以紧急用钱为由诈骗,Orange官网安全文章逐字引用的真实钓鱼SMS原文,是,https://tech.orange.fr/vie-digitale/securite/article-hello-papa-hello-maman-j-ai-perdu-mon-telephone-l-arnaque-qui-joue-sur-vos-sentiments-CNT0000029ICK9.html,A级官方来源
+示例159,"#NomBanque Un Paiement de 777,77 EUR est en cours. Ce n'est pas vous ? appelez-le <numerofraudeur>",短信,法国银行（SG等）,假SMS声称有777.77欧元支付正在进行，诱导受害者回拨诈骗号码（无链接，纯vishing引流）,Société Générale官方安全页公示的smishing原文示例,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例160,"Bonjour, j'ai un colis pour vous, il ne rentre pas dans votre boîte aux lettres. Vous êtes chez vous ?",短信,快递员（Colissimo/Chronopost等）,AI驱动的对话式smishing第一步，以包裹无法入箱为由开启对话,Société Générale官方安全页公示的对话式smishing三步示例第1步,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例161,"Bien reçu, pouvez-vous reprogrammer la livraison ?",短信,快递员,对话式smishing第2步，诱导受害者回复以建立互动,Société Générale官方安全页公示的对话式smishing三步示例第2步,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例162,Merci de confirmer vos instructions de livraison ici : [lien frauduleux],短信,快递员,对话式smishing第3步，在建立信任后发送欺诈链接窃取个人信息,Société Générale官方安全页公示的对话式smishing三步示例第3步,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例163,Pass Sécurité,邮件,Société Générale,以Pass Sécurité为主题行的钓鱼邮件，诱骗安装假安全服务,Société Générale官方安全页列出的钓鱼邮件主题示例,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例164,Découvrez le PASS,邮件,Société Générale,以推广Pass服务为名的钓鱼邮件主题行,Société Générale官方安全页列出的钓鱼邮件主题示例,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例165,Activer votre nouveau service,邮件,Société Générale,以激活新服务为名的钓鱼邮件主题行,Société Générale官方安全页列出的钓鱼邮件主题示例,是,https://m.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例166,"Hier à 17h32 un achat de billet d'avion a été réalisé à l'aide de votre carte bancaire 4*** **** **** **** pour un montant de 229,00 euros",邮件,Enquête CB / chargé de transactions litigieuses,假'银行卡调查'邮件声称发生229欧元机票购买，制造恐慌诱导点击链接,Boursorama Banque官网安全文章逐字引用的钓鱼邮件原文（经Midi Libre报道）,是,https://www.boursorama.com/patrimoine/actualites-amp/arnaque-attention-a-ce-faux-mail-qui-pretend-que-vous-avez-achete-des-billets-d-avion-d3ea9add510682d35ff15ebc757da051,A级官方来源
+示例167,"Si vous n'êtes pas à l'origine de cet achat, il vous suffit de cliquer ici. Sans action de votre part avant 17h32 aujourd'hui, l'achat sera considéré comme légitime et votre carte bancaire sera débitée",邮件,Enquête CB / chargé de transactions litigieuses,假邮件以24小时时限施压，诱导受害者点击欺诈链接输入银行卡信息,Boursorama Banque官网安全文章逐字引用的钓鱼邮件原文,是,https://www.boursorama.com/patrimoine/actualites-amp/arnaque-attention-a-ce-faux-mail-qui-pretend-que-vous-avez-achete-des-billets-d-avion-d3ea9add510682d35ff15ebc757da051,A级官方来源
+示例168,"Ulys Peage : un solde de 6,80 euros reste dû.",短信,Ulys / Vinci Autoroutes（电子通行服务）,假SMS声称通行费欠费6.80欧元，附期限和链接诱导支付以窃取银行卡信息,Free门户网站安全文章引用Ulys官方确认的钓鱼SMS原文,是,https://portail.free.fr/actualites/eco/ulys-peage-attention-a-cette-arnaque-qui-peut-vider-votre-compte-en-banque/,A级官方来源
+示例169,Dernier rappel avant fermeture,短信,各类机构（银行/运营商/行政）,smishing典型恐吓话术，以'关闭前最后通知'制造紧迫感,Orange Pro官方smishing指南引用的典型诈骗SMS话术原文,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例170,Votre paiement est en attente,短信,各类商户/银行,smishing典型话术，以支付待处理为由诱导点击链接,Orange Pro官方smishing指南引用的典型诈骗SMS话术原文,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例171,Votre colis est retenu,短信,快递公司（Colissimo/Chronopost等）,smishing典型话术，以包裹被扣为由诱导点击链接处理,Orange Pro官方smishing指南引用的典型诈骗SMS话术原文,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例172,Nouvelle tentative de connexion sur votre compte,短信,银行/在线服务,smishing典型话术，以新登录警报为由诱导点击链接验证账户,Orange Pro官方smishing指南引用的典型诈骗SMS话术原文,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例173,"Félicitations, vous avez gagné un iPhone !",短信,抽奖/促销活动,smishing典型利诱话术，以中奖iPhone为由诱导填写个人/银行卡信息,Orange Pro官方smishing指南引用的典型诈骗SMS话术原文,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例174,Appelez ce numéro immédiatement,短信,客服/反欺诈部门,smishing/vishing引流话术，诱导回拨假客服号码,Orange Pro官方smishing指南引用的典型诈骗SMS话术原文,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例175,"Crédit Agricole
+Votre Compte a été bloqué par notre service.
+Débloquer votre compte en vous (Re)enregistrant à SecuriPass sur
+https://secu.c-agricole.link/",短信,Crédit Agricole,假SMS声称账户被冻结，诱导点击secu.c-agricole.link假站重新注册SécuriPass窃取凭据,Orange官网网络安全指南页（引自cybermalveillance.fr）公示的真实钓鱼SMS截图,是,https://cybersecurite.orange.fr/la-cybersecurite/arnaques-en-ligne/arnaques-a-lhameconnage-le-guide-ultime.html,A级官方来源
+示例176,"Crit'Air :
+Nos agents ont constaté que votre véhicule n'était pas muni de la vignette règlementaire Crit'Air 2022
+veuillez la récupérer sous peine de contravention dans les prochaines 48 h
+sur le lien ci-joint :
+https://critair-f____.com/",短信,Crit'Air / 空气质量标志办理,假SMS以环保标志缺失将被罚为由，48小时内诱导点击假站办理,Orange官网网络安全指南页（引自cybermalveillance.fr）公示的真实钓鱼SMS截图,是,https://cybersecurite.orange.fr/la-cybersecurite/arnaques-en-ligne/arnaques-a-lhameconnage-le-guide-ultime.html,A级官方来源；变体
+示例177,confidentiel,邮件,银行,钓鱼邮件典型开头话术，以'机密'吸引注意力,Crédit Agricole官网安全文章指出以此类词开头的邮件99%为钓鱼,是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例178,nous avons remarqué un problème sur votre compte,邮件,银行,钓鱼邮件典型恐吓开头，声称账户存在问题,Crédit Agricole官网安全文章引用的典型钓鱼邮件开场话术,是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例179,votre carte bancaire est suspendue,邮件,银行,钓鱼邮件典型恐吓话术，声称银行卡被冻结,Crédit Agricole官网安全文章引用的典型钓鱼邮件话术,是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例180,veuillez valider ce remboursement,邮件,银行/税务/社保,钓鱼邮件典型话术，以退款需验证为由诱导点击,Crédit Agricole官网安全文章引用的典型钓鱼邮件话术,是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例181,De : Agence du Crédit Agricole <capsule-123456-qqr@xxxx.com>,邮件,Crédit Agricole,假发件人显示名'Agence du Crédit Agricole'但真实邮箱为capsule-123456-qqr@xxxx.com,Crédit Agricole官网安全文章给出的钓鱼发件人伪装示例,是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例182,Votre compte pourrait être suspendu sans intervention de votre part,邮件,Canal+,假Canal+邮件主题行，声称账户将被暂停，诱导48小时内更新支付信息,SFR Actus官网安全文章引用Canal+确认的钓鱼邮件主题行,是,https://actus.sfr.fr/tech/news/abonne-canal-attention-a-cette-nouvelle-arnaque_AN-202504070004.html,A级官方来源
+示例183,Netflix apprécie vos commentaires,邮件,Netflix Surveys,假Netflix调查邮件主题行，以满意度调查为名收集个人/银行卡信息,SFR Actus官网安全文章引用Netflix France警告的钓鱼邮件主题行,是,https://actus.sfr.fr/guide-et-comparatif/streaming-vod/netflix-la-plateforme-met-en-garde-face-a-une-nouvelle-arnaque-aux-sondages_AN-202302260003.html,A级官方来源
+示例184,le paiement a été validé avec succès,邮件,银行/支付服务,假邮件声称某笔支付已成功验证，制造恐慌诱导回拨假'救援号码',SFR Actus官网安全文章描述的钓鱼邮件原文措辞,是,https://actus.sfr.fr/tech/news/securite-attention-a-cette-arnaque-par-mail-pretextant-un-paiement-valide_AN-202511090004.html,A级官方来源
+示例185,MonConseiller,短信,银行/客服,smishing中伪装的发件人名称，冒充'我的顾问',Orange Pro官方smishing指南列出的可疑发件人名称示例,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例186,SupportLivraison,短信,快递客服,smishing中伪装的发件人名称，冒充'配送支持',Orange Pro官方smishing指南列出的可疑发件人名称示例,是,https://pro.orange.fr/lemag/smishing-sms-frauduleux-que-faire-CNT000002iKzi1.html,A级官方来源
+示例187,Cher client,邮件,银行,钓鱼邮件典型匿名称呼，几乎不指名道姓,Crédit Agricole官网安全文章指出钓鱼邮件多以'Cher client'等泛称开头,是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例188,"Madame, Monsieur",邮件,银行/行政,钓鱼邮件典型匿名称呼，未个性化,"Crédit Agricole官网安全文章指出钓鱼邮件多以'Madame, Monsieur'等泛称开头",是,https://headless-content-pilote.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/tentative-de-phising-comment-les-reperer.html,A级官方来源
+示例189,Compte verrouillé,短信,Crédit Agricole,smishing典型主题，声称账户被锁定,Crédit Agricole官方列出的smishing常见主题之一,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-sms.html,A级官方来源
+示例190,Message à consulter,短信,Crédit Agricole,smishing典型主题，声称有消息待查阅,Crédit Agricole官方列出的smishing常见主题之一,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-sms.html,A级官方来源
+示例191,Mise à jour d'informations,短信,Crédit Agricole,smishing典型主题，以信息更新为由诱导点击链接,Crédit Agricole官方列出的smishing常见主题之一,是,https://www.credit-agricole.fr/particulier/cybersecurite/alertes-phishing-sms.html,A级官方来源
+示例192,Annulation action,邮件,CIC / 银行,假'外部转账通知'邮件中嵌入的欺诈链接文字，诱导点击取消动作,CIC官方安全页描述假转账通知钓鱼邮件中使用的链接文字,是,https://www.cic.fr/fr/particuliers/comptes/alerte-fraude-phishing-avis-virement-externe.html,A级官方来源
+示例193,vous proposez de mettre à jour votre carte Vitale,短信,Assurance Maladie / CPAM,假SMS诱导更新医保卡，点击链接窃取个人及银行卡信息,Crédit Mutuel官方安全页描述的'Carte Vitale' smishing诈骗话术,是,https://www.creditmutuel.fr/cmag/fr/particuliers/comptes/alerte-fraude-arnaque-sms-mise-jour-carte-vitale.html,A级官方来源
+示例194,votre compte ou l'un de vos contrats à la banque va être clôturé,邮件,Crédit Mutuel / 银行,假邮件声称账户/合同将被关闭，诱导点击链接'解决情况'窃取凭据,Crédit Mutuel官方安全页描述的'账户关闭'钓鱼邮件话术,是,https://www.creditmutuel.fr/cmne/fr/le-mag/alerte-fraude-phishing-fermeture-compte.html,A级官方来源
+示例195,votre colis (numéro de colis indiqué) est soumis à des frais de douane,短信,海关/快递公司,假SMS声称包裹需缴纳关税，诱导点击链接支付,CIC官方安全页描述的'关税'smishing诈骗话术,是,https://www.cic.fr/fr/particuliers/comptes/alerte-fraude-sms-frais-douane.html,A级官方来源
+示例196,un remboursement d'un trop-perçu est en attente de validation,邮件,Sécurité sociale / Caf / Pôle emploi / fisc,假行政邮件声称多缴款项待退还，诱导点击链接填写银行信息,Crédit Agricole官网安全文章描述的假退款诈骗话术,是,https://vitrines.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/arnaques-aux-faux-remboursements.html,A级官方来源
+示例197,il faut régler les frais d'expédition pour votre nouvelle carte vitale,短信,Sécurité sociale (Ameli),假SMS/邮件以新医保卡需付运费为由诱导支付,Crédit Agricole官网安全文章描述的假退款/医保卡诈骗话术,是,https://vitrines.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/arnaques-aux-faux-remboursements.html,A级官方来源
+示例198,facture Netflix impayée,短信,Netflix,假SMS声称Netflix账单未付，诱导点击链接更新支付方式,Orange官网网络安全指南描述的smishing典型场景,是,https://cybersecurite.orange.fr/la-cybersecurite/arnaques-en-ligne/arnaques-a-lhameconnage-le-guide-ultime.html,A级官方来源
+示例199,votre colis n'a pas pu être livré,短信,快递公司,假SMS声称包裹无法投递，诱导点击链接重新安排配送,Orange Cybersecurite官网文章描述的配送类smishing话术,是,https://cybersecurite.orange.fr/la-cybersecurite/arnaques-en-ligne/recrudescence-des-arnaques-a-la-livraison-verifier-les-sms-douteux-avant-de-cliquer.html,A级官方来源
+示例200,il ne rentrait pas dans la boîte aux lettres,语音,快递员,假语音留言（vishing/voicemail）以包裹无法入箱为由诱导后续SMS点击,Orange官网安全文章引用的假快递语音留言原文,是,https://tech.orange.fr/securite/mes-donnees/c-est-fait-les-arnaques-au-livreur-franchissent-une-etape-que-vous-n-avez-jamais-vue-ou-entendue-CNT000002pRrn2.html,A级官方来源
+示例201,"Nous vous informons que la marque est actuellement utilisée dans le cadre d'une campagne d'hameçonnage. Il est possible que vous receviez des e-mails ou SMS frauduleux imitant les e-mails/SMS Ulys ou de Vinci Autoroutes (couleurs, logo...).",邮件,Ulys / Vinci Autoroutes,Ulys官方声明确认品牌被用于钓鱼活动，仿冒邮件/SMS使用其颜色和logo,Free门户网站引用Ulys官网的官方声明原文,是,https://portail.free.fr/actualites/eco/ulys-peage-attention-a-cette-arnaque-qui-peut-vider-votre-compte-en-banque/,A级官方来源
+示例202,"Un prétendu courrier de l'Assurance Maladie invite à suivre une procédure en scannant un QR code dans les 72 heures. Dans le cas contraire, le compte Ameli pourrait être suspendu temporairement.",邮件,Assurance Maladie / Ameli,假信件要求72小时内扫描QR码，否则Ameli账户将被暂停（quishing）,Free门户网站引用CNAM官方确认为钓鱼的信件内容,是,https://portail.free.fr/actualites/eco/carte-vitale-attention-a-ce-courrier-cest-une-arnaque/,A级官方来源
+示例203,"Des mails frauduleux prétendent mener une enquête pour blanchiment d'argent et incitent à contacter les expéditeurs. Ils utilisent des domaines officiels (interieur.gouv.fr, justice.gouv.fr), des entêtes et signatures authentiques pour paraître crédibles.",邮件,"法国内政部/司法部（interieur.gouv.fr, justice.gouv.fr）",假邮件声称反洗钱调查，使用官方政府域名和真实抬头诱导联系,Société Générale专业客户安全页公示的最新威胁描述,是,https://professionnels.secure.societegenerale.fr/securite/dernieres-menaces-identifiees,A级官方来源
+示例204,"De: Banque Populaire <service@banquepopulaire-notif.fr>
+Objet: Confirmation de virement - 1 890,00 EUR vers IBAN étranger
+
+Bonjour,
+
+Un virement de 1 890,00 EUR a été initié depuis votre compte vers le bénéficiaire suivant : Marco R. (IT68 S054 2811 1010 0000 0123 456).
+
+Si vous n'êtes pas à l'origine de cette opération, annulez-la immédiatement :
+[Annuler ce virement]
+
+Passé un délai de 2 heures, le virement sera irrévocable.",邮件,Banque Populaire,谎称有一笔境外汇款待确认，制造恐慌诱导点击假网站窃取网银账号,发件域名banquepopulaire-notif.fr非官方域名；2小时紧急时限；银行不会通过邮件取消汇款,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例205,"De: Centre de prélèvement <recouvrement@sepa-recouvrement.eu>
+Objet: REJET - Prélèvement SEPA du 15/03/2026 refusé par votre banque
+
+Madame, Monsieur,
+
+Le prélèvement SEPA de 127,40 EUR présenté le 15/03/2026 (Réf. PRLV-2026-98271) a été rejeté par votre établissement bancaire pour provision insuffisante.
+
+Afin d'éviter des frais d'impayé (15,00 EUR) et une interruption de service, veuillez mettre à jour votre moyen de paiement :
+[Régulariser mon prélèvement]",邮件,SEPA/第三方催收,谎称自动扣款失败，威胁滞纳金，诱导更新银行卡信息,发件域名sepa-recouvrement.eu非官方；无具体债权人名称；扣款失败应由银行通知而非第三方,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例206,"De: Cabinet Martin - Gestion immobiliere <contact@cabinet-martin-immo.fr>
+Objet: Changement de coordonnées bancaires pour votre loyer
+
+Cher(e) locataire,
+
+Nous vous informons que nos coordonnées bancaires ont changé suite à une restructuration interne. Veuillez noter notre nouveau RIB pour le virement de votre prochain loyer :
+
+IBAN : FR76 3000 4028 3700 0100 0943 267
+BIC : BNPAFRPPXXX
+
+Merci de bien vouloir mettre à jour vos virements automatiques dès maintenant.
+
+Cordialement,
+Cabinet Martin",邮件,房产管理公司/Cabinet Martin,冒充房东或供应商通知更改RIB，诱导租客将房租汇入诈骗账户,仅凭邮件要求更改RIB；域名cabinet-martin-immo.fr与官方域名可能近似；无电话或邮寄确认,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例207,"De: Ameli.fr - Assurance Maladie <remboursement@ameli-assurance.com>
+Objet: Remboursement en attente : 143,80 EUR - Dossier n°AM-2026-7741
+
+Bonjour,
+
+Après analyse de vos derniers remboursements, un montant de 143,80 EUR reste à vous verser. Pour le recevoir, veuillez mettre à jour vos coordonnées bancaires :
+[Mettre à jour mes coordonnées]
+
+Important : Ce remboursement sera annulé après le 22/03/2026 si vos coordonnées ne sont pas confirmées.
+
+Votre Assurance Maladie",邮件,Ameli/Assurance Maladie,冒充医保局谎称有待报销款，诱导更新银行账户信息,发件域名ameli-assurance.com非官方（官方为assurance-maladie.ameli.fr）；Ameli从不通过邮件索要银行信息；设到期时限制造紧迫,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例208,"De: CAF - Votre espace <prime@caf-allocations.fr>
+Objet: Prime d'activité : vous avez droit à 312,00 EUR
+
+Bonjour,
+
+Suite à la revalorisation des aides sociales 2026, vous êtes éligible à une prime d'activité exceptionnelle de 312,00 EUR.
+
+Pour en bénéficier, confirmez votre dossier avant le 20/03/2026 :
+[Valider ma prime d'activité]
+
+Caisse d'Allocations Familiales",邮件,CAF（家庭补助金库）,冒充CAF谎称符合特殊津贴条件，诱导点击链接验证,发件域名caf-allocations.fr非官方（官方caf.fr）；津贴不会通过邮件点击发放；人为时限压力,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例209,"De: France Identité <service@france-identite-gouv.fr>
+Objet: Votre carte d'identité expire bientôt - Pré-demande en ligne
+
+Bonjour,
+
+Votre carte nationale d'identité (n° XXX) arrive à expiration le 15/04/2026.
+
+Pour faciliter votre renouvellement, effectuez votre pré-demande en ligne et recevez votre nouveau titre en 15 jours :
+[Faire ma pré-demande]
+
+Frais de traitement accéléré : 29,90 EUR
+
+Service France Identité",邮件,France Identité/ANTS,冒充身份证续期服务，收取高额加急费,域名france-identite-gouv.fr非官方（官方france-identite.gouv.fr）；法国身份证免费办理；不存在邮件加急付费,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例210,"De: Amazon.fr <commandes@amazon-commandes.fr>
+Objet: Confirmation de commande n°402-7891234-5678901 - 489,99 EUR
+
+Bonjour,
+
+Merci pour votre commande ! Votre iPhone 15 Pro (489,99 EUR) sera expédié sous 24 heures.
+
+Si vous n'êtes pas à l'origine de cette commande, annulez-la immédiatement :
+[Annuler cette commande]
+
+Amazon.fr - Service Clients",邮件,Amazon,谎称下单高价商品，利用取消订单的恐慌诱导点击假网站,域名amazon-commandes.fr非官方（官方amazon.fr）；高价商品制造恐慌；取消链接指向钓鱼网站,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例211,"De: Vinted <transactions@vinted-secure.com>
+Objet: Paiement reçu pour votre article - 45,00 EUR
+
+Bonjour,
+
+L'acheteur a procédé au paiement de 45,00 EUR pour votre article ""Veste Zara taille M"".
+
+Pour recevoir les fonds sur votre portefeuille Vinted, confirmez l'envoi :
+[Confirmer et recevoir le paiement]
+
+Vinted - Service des transactions",邮件,Vinted,冒充Vinted通知卖家买家已付款，诱导点击外部链接确认,域名vinted-secure.com非官方；Vinted交易在应用内完成，从不通过外部邮件链接确认,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例212,"De: Comptabilité Durand SARL
+<compta@durand-sarl-facture.fr>
+Objet: RAPPEL - Facture n°FA-2026-0417 impayée - Échéance dépassée
+
+Madame, Monsieur,
+
+Sauf erreur de notre part, la facture n°FA-2026-0417 d'un montant de 2 340,00 EUR TTC reste impayée à ce jour.
+
+Veuillez trouver ci-joint le duplicata de la facture.
+[Facture-FA-2026-0417.pdf.exe]
+
+Merci de procéder au règlement dans les meilleurs délais.",邮件,Durand SARL（虚假公司账单）,发送含恶意附件的虚假账单，.pdf.exe伪装文件传播木马,发件方不明且无商业关系；附件为.pdf.exe双扩展名可执行文件；无可靠联系方式,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例213,"De: La Poste - Avis de passage <avis@laposte-avis.fr>
+Objet: Avis de passage - Colis non distribué le 16/03/2026
+
+Bonjour,
+
+Le facteur s'est présenté à votre domicile le 16/03/2026 à 10h42, mais n'a pas pu vous remettre votre colis (personne présente).
+
+Reprogrammez votre livraison gratuitement :
+[Reprogrammer ma livraison]
+
+Votre colis sera conservé 15 jours en bureau de poste.",邮件,La Poste,冒充邮递员派送通知，诱导点击假网站重约配送窃取个人信息,域名laposte-avis.fr非官方；真实派送通知单是纸质投递到信箱；无有效追踪号,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例214,"De: Microsoft 365 <alertes@microsoft365-alert.com>
+Objet: Action requise : votre mot de passe Office 365 expire dans 24h
+
+Bonjour,
+
+Votre mot de passe Microsoft 365 expire le 18/03/2026. Pour éviter toute interruption de service, renouvelez-le dès maintenant :
+[Renouveler mon mot de passe]
+
+Si vous ne renouvelez pas votre mot de passe, vous perdrez l'accès à Outlook, Teams et OneDrive.
+
+Microsoft Corporation",邮件,Microsoft 365/Office,冒充微软通知密码过期，诱导在假页面输入旧密码和新密码,域名microsoft365-alert.com非官方；Office 365密码通常不自动过期；威胁失去所有工作工具,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例215,"De: iCloud <stockage@icloud-storage.com>
+Objet: Votre stockage iCloud est plein (99,8%) - Vos photos seront supprimées
+
+Bonjour,
+
+Votre espace iCloud a atteint 99,8 % de sa capacité. Si aucune action n'est prise, la synchronisation sera arrêtée et vos photos récentes seront définitivement supprimées.
+
+Profitez de notre offre exceptionnelle : 50 Go supplémentaires pour seulement 0,99 EUR/mois :
+[Augmenter mon stockage]",邮件,Apple iCloud,冒充iCloud通知存储空间满，威胁删除照片，诱导付款或输入银行卡,域名icloud-storage.com非官方（官方apple.com）；Apple不会无预警删除照片；以优惠为诱饵,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例216,"De: Domain Registry Services <renouvellement@domain-registry-services.fr>
+Objet: URGENT : Votre domaine mon-entreprise.fr expire dans 3 jours
+
+Attention : Le nom de domaine mon-entreprise.fr expire le 20/03/2026.
+
+Si le renouvellement n'est pas effectué, votre domaine sera mis aux enchères et pourra être acquis par un tiers.
+[Renouveler mon domaine maintenant - 89,99 EUR/an]",邮件,域名注册商,谎称域名即将到期拍卖，以远超市场价续费诱导付费,"发件方非用户注册商；.fr域名年约7-12欧元，此处89,99欧元为高价；威胁拍卖制造恐慌",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例217,"De: Norton Security <alerte@norton-protection-alert.com>
+Objet: ALERTE CRITIQUE : 3 virus détectés sur votre appareil
+
+ATTENTION ! Votre protection Norton a expiré le 01/03/2026.
+
+Notre dernière analyse a détecté 3 menaces critiques sur votre appareil :
+- Trojan.GenericKD.47839212
+- Spyware.Banker.Gen
+- Adware.BrowserModifier
+
+Renouvelez immédiatement votre protection pour supprimer ces menaces :
+[Renouveler Norton - Offre -70% : 29,99 EUR/an]",邮件,Norton antivirus,谎称检测到病毒，以安全警报诱导支付虚假订阅,域名norton-protection-alert.com非官方；杀毒软件不会通过邮件报告病毒；警报中夹带70%折扣促销,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例218,"De: Orange <recouvrement@orange-mobile.net>
+Objet: Facture impayée - Suspension de ligne imminente
+
+Bonjour,
+
+Votre facture Orange de février 2026 (47,99 EUR) reste impayée. Sans régularisation sous 72 heures, votre ligne mobile sera suspendue.
+[Régler ma facture]
+
+Orange - Service Recouvrement",邮件,Orange,冒充Orange催缴欠费，威胁停机诱导支付,域名orange-mobile.net非官方（官方orange.fr）；Orange停机前会先邮寄催款单；72小时时限制造紧迫,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例219,"De: Service Crit'Air <commande@service-critair.fr>
+Objet: Commandez votre vignette Crit'Air obligatoire - ZFE 2026
+
+Bonjour,
+
+Suite à l'extension des Zones à Faibles Émissions (ZFE) au 1er mars 2026, votre véhicule nécessite une vignette Crit'Air pour circuler.
+
+Sans cette vignette, vous risquez une amende de 68 à 135 EUR.
+[Commander ma vignette Crit'Air - 29,90 EUR]",邮件,Crit'Air/认证环保标签,"冒充Crit'Air标签订购，以8倍价格收费（官方3,72欧元）","官方网站certificat-air.gouv.fr且标签仅3,72欧元；此处29,90欧元为8倍溢价；以法规和罚款施压",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例220,"De: Enedis - Compteur Linky <intervention@enedis-linky.com>
+Objet: Mise à jour obligatoire de votre compteur Linky - Intervention programmée
+
+Bonjour,
+
+Une mise à jour logicielle de votre compteur Linky est nécessaire. Pour programmer l'intervention d'un technicien, veuillez confirmer vos coordonnées et votre disponibilité :
+[Programmer mon intervention]
+
+Sans confirmation, votre compteur pourrait ne plus transmettre vos relevés.",邮件,Enedis/Linky电表,冒充Enedis谎称Linky电表需远程升级，骗取个人信息,域名enedis-linky.com非官方（官方enedis.fr）；Linky升级为远程自动进行；Enedis不会通过邮件确认上门,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源
+示例221,"De: Me Jean-Pierre Dumont, Notaire <etude.dumont@notaire-paris.fr>
+Objet: Succession Mme Hélène Moreau - Vous êtes bénéficiaire
+
+Madame, Monsieur,
+
+Je suis Maître Jean-Pierre Dumont, notaire à Paris. Suite au décès de Mme Hélène Moreau le 14/01/2026, survenu sans descendance directe, mes recherches ont établi que vous figurez parmi les bénéficiaires de sa succession, estimée à 847 000 EUR.
+
+Je vous prie de bien vouloir me contacter rapidement afin de procéder aux formalités de transfert. Des frais de dossier de 1 850 EUR seront nécessaires pour initier la procédure.
+
+Dans l'attente de votre retour, veuillez agréer mes salutations distinguées.",邮件,巴黎公证处/Notaire,冒充公证员谎称继承陌生人巨额遗产，先收手续费再逐步勒索,不认识死者；真正公证员会用挂号信联系；要求先付1850欧元手续费解锁遗产；邮箱地址可疑,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源；419遗产诈骗
+示例222,"De: Elena Vasquez <elena.vasquez.medecin@gmail.com>
+Objet: J'espère que ce message ne vous dérangera pas
+
+Bonjour,
+
+Je m'appelle Elena, j'ai 34 ans et je vis en Espagne. J'ai trouvé votre profil sur un annuaire professionnel et j'ai été touchée par votre parcours. J'aimerais beaucoup échanger avec vous si vous êtes ouvert(e) à de nouvelles rencontres amicales.
+
+Je suis médecin humanitaire et je traverse une période difficile...",邮件,Elena Vasquez（虚构陌生人）,Romance scam：以漂亮陌生人主动搭讪建立情感关系后索要钱财,陌生人主动搭讪；感人故事；使用Gmail免费邮箱；建立关系后将索要机票/医疗费用,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源；romance scam
+示例223,"De: Euro Millions Officiel <gain@euromillions-officiel.eu>
+Objet: FÉLICITATIONS ! Vous avez gagné 750 000,00 EUR - Tirage du 14/03/2026
+
+FÉLICITATIONS !
+
+Votre adresse email a été sélectionnée lors de notre tirage spécial et vous remportez la somme de 750 000,00 EUR !
+
+Pour réclamer votre gain, envoyez-nous les informations suivantes :
+- Nom complet
+- Adresse postale
+- Copie de pièce d'identité
+- Coordonnées bancaires (IBAN)
+
+Frais de transfert : 150,00 EUR (remboursés à la réception de vos gains)
+
+Agent de réclamation : M. Robert Williams",邮件,Euro Millions彩票,谎称中彩票大奖，要求提供个人信息和手续费,从未参与抽奖；不可能通过邮件中奖；要求先付150欧元转账费；要求身份证和银行信息,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源；advance-fee lottery scam
+示例224,"De: Thomas Lefèvre - DSI <t.lefevre@it-services-pro.com>
+Objet: RE: Migration serveurs - Accès VPN temporaire
+
+Salut Jean-Marc,
+
+Suite à notre réunion de mardi sur la migration des serveurs, j'ai besoin de tes identifiants de connexion au VPN pour effectuer les tests de charge ce weekend.
+
+Peux-tu me les envoyer en retour ? On est un peu dans le rush avec le planning de migration qu'on a validé avec Stéphanie.
+
+Merci, Thomas
+
+Thomas Lefèvre | Directeur des Systèmes d'Information
+IT Services Pro | 01 45 XX XX XX",邮件,公司DSI Thomas Lefèvre,鱼叉式钓鱼：冒充同事索要VPN账号密码，语气随意降低戒心,引用真实会议和项目名称增加可信度；通过邮件索要敏感账号；真正IT部门不会通过邮件索要密码,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,B级第三方来源；spear phishing
+示例225,"Cher client,
+
+Suite a un probleme technique avec notre systeme de paiement,
+votre reservation risque d'etre annulee. Pour confirmer
+votre reservation, veuillez mettre a jour vos informations
+de paiement via le lien suivant dans les 24 heures.
+
+[lien frauduleux]
+
+Cordialement,
+Hotel [nom reel de l'hotel]",邮件,Booking.com酒店,通过被黑的酒店Booking账号发消息，谎称支付系统故障需更新银行卡,来自真实酒店账号但要求重新输入支付信息；24小时时限；Booking从不要求通过链接重新输入银行卡,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-booking-faux-hotel,B级第三方来源
+示例226,"De: confirmation@booking-reservation-payment.com
+Objet: Confirmation de reservation #8834291
+
+Votre reservation a ete confirmee. Telechargez
+votre bon de confirmation :
+[piece jointe malveillante]",邮件,Booking.com,冒充Booking确认预订，附带恶意附件,发件域名非booking.com；要求下载附件；预订号不认识,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-booking-faux-hotel,B级第三方来源
+示例227,"Booking: Probleme avec votre reservation du 15/03.
+Confirmez vos coordonnees bancaires pour eviter
+l'annulation : booking-verify.com/confirm",短信,Booking.com,冒充Booking发短信要求确认银行卡信息避免取消预订,Booking从不通过短信要求确认银行卡；链接指向非官方域名,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-booking-faux-hotel,B级第三方来源；smishing
+示例228,"Vinted: Votre article a ete vendu! Confirmez
+l'envoi pour recevoir votre paiement:
+vinted-confirmation-envoi.com",短信,Vinted,冒充Vinted通知商品已售出，诱导点击外部链接确认,链接指向vinted-confirmation-envoi.com而非vinted.fr；Vinted交易在应用内完成,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaques-vinted-vendeurs-acheteurs,B级第三方来源；smishing
+示例229,"De: payment@vinted-service-paiement.com
+Objet: Action requise - Confirmez votre vente
+
+Votre acheteur a paye 89EUR. Pour recevoir
+votre argent, confirmez vos informations
+bancaires sur notre plateforme securisee.",邮件,Vinted,冒充Vinted通知买家已付款89欧元，诱导确认银行信息,发件域名vinted-service-paiement.com非官方；Vinted不通过外部邮件要求确认银行信息,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaques-vinted-vendeurs-acheteurs,B级第三方来源
+示例230,"Objet: FÉLICITATIONS ! Vous avez gagné 850 000 € !
+
+Cher gagnant,
+
+Nous avons le plaisir de vous informer que votre adresse
+email a été sélectionnée lors de notre tirage annuel.
+
+Vous avez gagné la somme de 850 000,00 EUR.
+
+Pour réclamer votre prix, veuillez contacter notre agent :
+Mr. John Smith
+Email: claims@euro-lottery-int.com
+
+Cordialement,
+Direction de la Loterie Européenne",邮件,欧洲彩票/Direction de la Loterie Européenne,谎称中85万欧元彩票，要求联系agent领取，后续索要手续费,从未参与抽奖；使用Gmail类免费邮箱联系；要求联系agent后将索要手续费,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/fausse-loterie,B级第三方来源；变体：与Euro Millions样本金额不同
+示例231,"DOUANE FR: Votre colis N°LP-847293 est retenu
+pour frais de douane de 2.99EUR. Payez pour
+recevoir votre livraison: douane-colis-fr.com",短信,法国海关/La Poste,冒充海关谎称包裹被扣需付2.99欧元关税，实际窃取银行卡信息,海关从不通过短信要求付税；链接douane-colis-fr.com非官方；小额支付为诱饵,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-douane,B级第三方来源；smishing
+示例232,"La Poste: Votre colis international necessite
+le paiement de taxes douanieres (1.95EUR).
+Completez ici: laposte-douane.fr/paiement",短信,La Poste,冒充La Poste称国际包裹需付关税1.95欧元,La Poste从不通过短信发送支付链接；laposte-douane.fr非官方域名,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-douane,B级第三方来源；smishing
+示例233,"DHL Express: Votre envoi est en attente de
+dedouanement. Frais: 4.50EUR. Reglez maintenant:
+dhl-customs-fr.com/pay",短信,DHL Express,冒充DHL称包裹待清关需付4.50欧元,DHL关税在送货时或通过官方账单收取，从不短信链接支付；dhl-customs-fr.com非官方,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-douane,B级第三方来源；smishing
+示例234,"De: security@netflix-support.com
+Objet: URGENT : Votre compte Netflix va être SUSPENDU
+
+Cher(e) client(e),
+
+Nous avons detecté une activité suspecte sur votre compte Netflix. Votre compte sera SUSPENDU dans les 24 HEURES si vous ne vérifiez pas vos informations.
+
+Cliquez immédiatement sur le lien ci-dessous pour confirmer votre identité :
+http://netflix-verification-compte.com/securite
+
+Si vous ne confirmez pas dans les 24h, votre compte sera définitivement supprimé et vous perdrez tout votre historique.
+
+Le service sécurité Netflix",邮件,Netflix,冒充Netflix安全部门称账户将被暂停，诱导点击HTTP（非HTTPS）假网站,发件域netflix-support.com非官方；detecté缺重音符；链接为HTTP非HTTPS；通用称呼Cher(e) client(e),是,mailarnaque.fr - https://mailarnaque.fr/outils/comparateur-email,B级第三方来源
+示例235,"[COLISSIMO] Votre colis est en attente.
+Frais de port: 1,99€
+Confirmez ici: bit.ly/xxxxx",短信,Colissimo,冒充Colissimo称包裹待取，1.99欧元邮费，使用bit.ly短链接,使用bit.ly短链接隐藏真实目的地；Colissimo从不短信收费；发件人显示名可伪造,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-colis,B级第三方来源；smishing
+示例236,"Objet: Colis bloqué en douane - Action requise
+
+Votre colis n°CP123456789FR est bloqué en douane.
+Frais de dédouanement: 4,95€
+
+Payez maintenant pour débloquer votre livraison.",邮件,海关/La Poste,谎称包裹被海关扣留需付4.95欧元清关费,海关费用不通过邮件链接支付；包裹号CP123456789FR为示例编造号码,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-colis,B级第三方来源
+示例237,"CHRONOPOST: Votre colis est bloque en douane.
+Reglez les frais de 1.95EUR pour debloquer la livraison:
+chronopost-livraison.com/frais",短信,Chronopost,冒充Chronopost称包裹海关被扣需付1.95欧元,chronopost-livraison.com非官方（官方chronopost.fr）；bloqué缺重音符；Chronopost从不短信收费,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/sms-colis-frauduleux-reconnaitre,B级第三方来源；smishing
+示例238,"La Poste: Livraison echouee. Choisissez un nouveau creneau:
+laposte-relivraison.fr/programmer",短信,La Poste,冒充La Poste称派送失败需选择新时段,laposte-relivraison.fr非官方；échoué缺重音符；真实派送通知为纸质通知单,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/sms-colis-frauduleux-reconnaitre,B级第三方来源；smishing
+示例239,"Colissimo: Confirmez votre adresse pour la livraison
+de demain. Cliquez ici: colissimo-confirmer.com",短信,Colissimo,冒充Colissimo要求确认地址以完成次日配送,colissimo-confirmer.com非官方域名；收集个人地址和银行信息,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/sms-colis-frauduleux-reconnaitre,B级第三方来源；smishing
+示例240,"Votre colis est en cours d'acheminement.
+Suivez-le ici: bit.ly/3xKz9m2",短信,快递公司（未具名）,发送包裹追踪短链接，实际指向钓鱼网站,使用bit.ly短链接隐藏目的地；无快递公司名称；官方追踪从不使用短链接,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/sms-colis-frauduleux-reconnaitre,B级第三方来源；smishing
+示例241,Colissimo : Votre colis est en attente de livraison. Confirmez vos informations : [lien],短信,Colissimo,冒充Colissimo称包裹待送达需确认信息,Colissimo从不通过短信要求确认信息或发送支付链接,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-livraison-colissimo-chronopost,B级第三方来源；smishing
+示例242,"CHRONOPOST : Livraison impossible, adresse incomplète. Mettez à jour : [lien]",短信,Chronopost,冒充Chronopost称地址不完整需更新,Chronopost从不通过短信链接收集地址；更新地址应在官方应用内,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-livraison-colissimo-chronopost,B级第三方来源；smishing
+示例243,"La Poste : Un colis vous attend. Payez les frais de douane (1,95 EUR) pour le recevoir : [lien]",短信,La Poste,冒充La Poste称包裹待领需付1.95欧元关税,真实关税在送货时收取，从不通过短信链接支付,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-livraison-colissimo-chronopost,B级第三方来源；smishing
+示例244,DHL Express : Votre envoi est bloqué en douane. Réglez les taxes : [lien],短信,DHL Express,冒充DHL称包裹海关被扣需缴税,DHL关税通过官方账单或送货时收取，从不短信链接,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/arnaque-livraison-colissimo-chronopost,B级第三方来源；smishing
+示例245,"De: « Maître Lefebvre, Notaire »
+Objet: Succession - Notification de legs en votre faveur - Dossier N°2026/SUC/1847
+
+Madame, Monsieur,
+
+Je suis Maître Jean-Pierre Lefebvre, notaire à Paris (CRPCEN n° 7500123). Je me permets de vous contacter dans le cadre de la succession de Monsieur Henri Duval, décédé le 14 janvier 2026 à Paris, sans héritier direct connu.
+
+Par testament olographe en date du 3 mai 2024, M. Duval vous a désigné comme légataire universel de ses biens, évalués à 4 700 000 euros (quatre millions sept cent mille euros).
+
+Je vous prie de bien vouloir me communiquer vos coordonnées complètes afin de procéder à l'ouverture de la procédure successorale.
+
+Dans l'attente de votre réponse, je vous prie d'agréer mes salutations distinguées.
+
+Maître J.-P. Lefebvre, Notaire",邮件,巴黎公证员Maître Lefebvre,419遗产诈骗：冒充公证员称陌生人遗赠470万欧元，索要个人信息,不认识死者；真正公证员通过挂号信联系；要求提供完整联系方式后将索要手续费,是,iarnaque.fr - https://iarnaque.fr/arnaques/email/arnaque-faux-heritage,B级第三方来源；419 scam；与Notaire Moreau样本为不同变体
+示例246,"De: « R. Hartmann, Private Banking »
+Objet: Compte dormant - Proposition confidentielle
+
+Cher(e) Monsieur/Madame,
+
+Je suis Richard Hartmann, directeur du département Succession et Comptes Dormants chez UBS Private Banking, Zurich. Un de nos clients français, décédé en 2023, a laissé un compte d'investissement d'une valeur de 8,3 millions EUR sans héritier déclaré.
+
+Après vérification, votre nom de famille correspond à celui du défunt. Je vous propose de vous désigner comme parent proche et bénéficiaire légitime. Les fonds seront partagés : 60 % pour vous, 40 % pour moi.
+
+Cette opération est strictement confidentielle et sans risque. Merci de me répondre pour que je vous communique les détails.
+
+Cordialement,
+Richard Hartmann",邮件,UBS Private Banking银行家Richard Hartmann,冒充瑞士银行家称有830万无主账户，以60/40分成引诱受害者参与,以同姓为由冒充亲属；要求保密；银行不会通过邮件陌生人分享账户；后续将索要手续费,是,iarnaque.fr - https://iarnaque.fr/arnaques/email/arnaque-faux-heritage,B级第三方来源；419 scam/假银行家
+示例247,"De: facture@free-service.com
+Objet: URGENT - Facture impayée de 89,99€
+
+""Payez sous 24h ou votre ligne sera coupée""
+Lien vers: free-paiement.site",邮件,Free,冒充Free催缴89.99欧元欠费，威胁24小时停机,发件域free-service.com非官方（官方free.fr）；free-paiement.site非官方；威胁停机为施压手段,是,mailarnaque.fr - https://www.mailarnaque.fr/phishing/marque/free,B级第三方来源；变体
+示例248,"De: facture@bouyguestelecom-service.com
+Objet: URGENT - Facture impayée de 89,99€
+
+""Payez sous 24h ou votre ligne sera coupée""
+Lien vers: bouyguestelecom-paiement.site",邮件,Bouygues Telecom,冒充Bouygues催缴89.99欧元欠费威胁停机,发件域非官方（官方bouyguestelecom.fr）；付款链接指向非官方域名；24小时威胁,是,mailarnaque.fr - https://www.mailarnaque.fr/phishing/marque/bouygues-telecom,B级第三方来源；与Free样本同模板变体
+示例249,"De: AMELI
+Votre carte Vitale expire le 15/02. Pour eviter
+l'interruption de vos droits, renouvelez-la sur:
+carte-vitale-ameli.fr/renouvellement",短信,Ameli/Assurance Maladie,冒充医保称Vitale卡即将过期需在线更新,Carte Vitale无过期日期；éviter缺重音符；域名carte-vitale-ameli.fr非官方,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/analyser-sms-frauduleux,B级第三方来源；smishing
+示例250,"De: +33 7 89 01 23 45
+Votre colis est en attente au point relais.
+Confirmez la livraison: https://bit.ly/3xYz123",短信,快递公司（未具名）,从手机号发送包裹待取通知，使用短链接,来自07手机号而非短号；无包裹追踪号；使用bit.ly短链接,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/analyser-sms-frauduleux,B级第三方来源；smishing
+示例251,Votre nouvelle carte vitale est disponible. Remplissez ce formulaire afin de rester couvert :,短信,Ameli/Assurance Maladie,称新Carte Vitale已就绪需填写表格以保持医保覆盖,Carte Vitale更新通过药房或ameli.fr应用；不通过短信链接填写表格；Cybermalveillance.gouv.fr记录此原文措辞,是,mailarnaque.fr - https://mailarnaque.fr/phishing/marque/ameli,B级第三方来源；Cybermalveillance.gouv.fr记录原文；smishing
+示例252,Votre carte vitale arrive à expiration. Veuillez la mettre à jour sous 48h via :,短信,Ameli/Assurance Maladie,称Carte Vitale即将过期需48小时内更新,Carte Vitale不会过期；48小时人为时限；Cybermalveillance.gouv.fr记录此原文措辞,是,mailarnaque.fr - https://mailarnaque.fr/phishing/marque/ameli,B级第三方来源；Cybermalveillance.gouv.fr记录原文；smishing；变体
+示例253,"Expiration de votre carte vitale, à mettre a jour impérativement",短信,Ameli/Assurance Maladie,称Carte Vitale到期必须更新,mise a jour缺省音符（原文即如此）；Carte Vitale无有效期；Cybermalveillance.gouv.fr记录此原文措辞及拼写错误,是,mailarnaque.fr - https://mailarnaque.fr/phishing/marque/ameli,B级第三方来源；Cybermalveillance.gouv.fr记录原文；原文拼写错误保留；smishing；变体
+示例254,ASSURANCE MALADIE : Renouvellement obligatoire de votre Carte Vitale à effectuer avant le,短信,Assurance Maladie,要求在截止日期前强制更新Carte Vitale,无强制更新日期；全大写制造紧迫感；Cybermalveillance.gouv.fr记录此原文措辞,是,mailarnaque.fr - https://mailarnaque.fr/phishing/marque/ameli,B级第三方来源；Cybermalveillance.gouv.fr记录原文；smishing；变体
+示例255,"Bonjour, votre colis Colissimo n 6C 048 372 841 FR est en attente de confirmation d'adresse. Mettez a jour vos informations avant le 21/03 pour eviter le retour a l'expediteur : colissimo-suivi.fr/6C048",短信,Colissimo,AI生成的高度逼真短信：含伪造追踪号6C048372841FR和合理截止日期,域名colissimo-suivi.fr非官方；a jour/éviter/expéditeur缺重音符；追踪号需在laposte.fr验证,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；AI生成变体；smishing
+示例256,"Opération suspecte détectée, confirmez votre identité",短信,银行,冒充银行称检测到可疑操作需确认身份,银行通过官方应用通知，不通过短信链接要求确认身份；此为smishing top 5常见模板,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；smishing
+示例257,Vous avez une amende impayée de 35 EUR,短信,ANTAI/交通罚款,冒充交通管理部门称有35欧元未缴罚款,罚款通过amendes.gouv.fr缴纳，从不短信链接；此为smishing常见模板,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；smishing
+示例258,Vous avez un remboursement en attente,短信,税务局/Impôts,冒充税务局称有退税待领取,退税自动打入已知银行账户，不通过短信链接；此为smishing常见模板,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；smishing
+示例259,Votre code de vérification WhatsApp est 847293. Ne le partagez pas,短信,WhatsApp,冒充WhatsApp验证码，实际诱骗受害者分享验证码以盗取账号,验证码不应通过此方式索取；攻击者以此号码登录受害者WhatsApp；新兴smishing类型,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；账号盗取；smishing
+示例260,"Maman, j'ai perdu mon téléphone. J'ai besoin que tu m'achètes des cartes Apple d'urgence",短信,受害者子女,冒充子女称手机丢失紧急需要Apple礼品卡,任何要求礼品卡支付的都是诈骗；应通过已知号码电话确认；无任何合法机构接受礼品卡支付,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-carte-cadeau,B级第三方来源；亲人求助诈骗；smishing
+示例261,"Papa, je suis coincé à l'étranger, mon compte est bloqué, envoie-moi des codes Steam",短信,受害者子女,冒充子女称在国外被困账户冻结需要Steam卡密码,Steam卡为不可追踪支付方式；子女身份需通过电话核实；任何要求礼品卡/Steam码的都是诈骗,是,mailarnaque.fr - https://www.mailarnaque.fr/scam/arnaque-carte-cadeau,B级第三方来源；亲人求助诈骗；smishing
+示例262,Cher client votre colis est en attente payer les frais ici www.faux-site.com,短信,快递公司（未具名）,经典旧式smishing：语法粗糙，称包裹待取需付费用,语法错误无标点；通用称呼Cher client；指向www.faux-site.com示例假网站；为传统smishing模板,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；传统smishing对照样本
+示例263,"Bonjour, c'est Julie de la société X. Êtes-vous bien M./Mme [nom] ?",短信,Julie（虚构企业联系人）,会话式smishing：先以正常对话建立信任，后续引入诈骗链接,陌生人主动联系确认身份；通过对话建立惯性后引入诈骗；此为2026年新兴smishing技术,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；会话式smishing；新兴手法
+示例264,Nous avons des images compromettantes de vous,短信,敲诈者（sextorsion）,短信敲诈：称掌握受害者不雅视频/图片，附带恶意链接,短信sextorsion为新兴类型；附带链接为恶意软件；不应回复或点击,是,mailarnaque.fr - https://www.mailarnaque.fr/blog/smishing-evolution-techniques-2026,B级第三方来源；sextorsion SMS；smishing
+示例265,"Bonjour,
+
+Un virement de 1 890,00 EUR a été initié depuis votre compte vers le bénéficiaire suivant : Marco R. (IT68 S054 2811 1010 0000 0123 456).
+
+Si vous n'êtes pas à l'origine de cette opération, annulez-la immédiatement :
+
+[Annuler ce virement]
+
+Passé un délai de 2 heures, le virement sera irrévocable.",邮件,Banque Populaire,"Faux virement initié, panique pour voler les identifiants sur faux site bancaire","Domaine frauduleux banquepopulaire-notif.fr, urgence de 2h, les banques n'annulent pas un virement par email",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Catalogue d'exemples réels d'emails frauduleux en France
+示例266,"Madame, Monsieur,
+
+Le prélèvement SEPA de 127,40 EUR présenté le 15/03/2026 (Réf. PRLV-2026-98271) a été rejeté par votre établissement bancaire pour provision insuffisante.
+
+Afin d'éviter des frais d'impayé (15,00 EUR) et une interruption de service, veuillez mettre à jour votre moyen de paiement :
+
+[Régulariser mon prélèvement]",邮件,Centre de prélèvement / organisme créancier,Faux rejet de prélèvement SEPA pour voler les coordonnées bancaires,"Domaine générique sepa-recouvrement.eu, aucun nom de créancier, menace de frais 15 EUR",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Exemple de phishing prélèvement SEPA
+示例267,"Cher(e) locataire,
+
+Nous vous informons que nos coordonnées bancaires ont changé suite à une restructuration interne. Veuillez noter notre nouveau RIB pour le virement de votre prochain loyer :
+
+IBAN : FR76 3000 4028 3700 0100 0943 267 BIC : BNPAFRPPXXX
+
+Merci de bien vouloir mettre à jour vos virements automatiques dès maintenant.
+
+Cordialement, Cabinet Martin",邮件,Cabinet Martin - Gestion immobilière (bailleur),Arnaque au faux changement de RIB pour détourner le loyer,"Changement de RIB par simple email, domaine proche cabinet-martin-immo.fr vs cabinet-martin.fr, aucune confirmation par autre canal",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Faux RIB / changement coordonnées bancaires
+示例268,"Bonjour,
+
+Après analyse de vos derniers remboursements, un montant de 143,80 EUR reste à vous verser. Pour le recevoir, veuillez mettre à jour vos coordonnées bancaires :
+
+[Mettre à jour mes coordonnées]
+
+Important : Ce remboursement sera annulé après le 22/03/2026 si vos coordonnées ne sont pas confirmées.
+
+Votre Assurance Maladie",邮件,Ameli / Assurance Maladie,Faux remboursement de soins pour voler le RIB,"Domaine ameli-assurance.com (vrai: assurance-maladie.ameli.fr), Ameli ne demande jamais de RIB par email, urgence 22/03/2026",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,"Phishing Ameli, marque la plus usurpée en France"
+示例269,"Bonjour,
+
+Suite à la revalorisation des aides sociales 2026, vous êtes éligible à une prime d'activité exceptionnelle de 312,00 EUR.
+
+Pour en bénéficier, confirmez votre dossier avant le 20/03/2026 :
+
+[Valider ma prime d'activité]
+
+Caisse d'Allocations Familiales",邮件,CAF (Caisse d'Allocations Familiales),Fausse prime d'activité pour voler données personnelles et bancaires,"Domaine caf-allocations.fr (vrai: caf.fr), primes jamais attribuées par clic dans email, urgence 20/03/2026",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing CAF
+示例270,"Bonjour,
+
+Votre carte nationale d'identité (n° XXX) arrive à expiration le 15/04/2026.
+
+Pour faciliter votre renouvellement, effectuez votre pré-demande en ligne et recevez votre nouveau titre en 15 jours :
+
+[Faire ma pré-demande]
+
+Frais de traitement accéléré : 29,90 EUR
+
+Service France Identité",邮件,France Identité / administration,Faux renouvellement CNI avec frais de traitement payants,"Domaine france-identite-gouv.fr (vrai: france-identite.gouv.fr), la CNI est gratuite en France, pas de frais de dossier par email",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Faux renouvellement carte d'identité
+示例271,"Bonjour,
+
+Merci pour votre commande ! Votre iPhone 15 Pro (489,99 EUR) sera expédié sous 24 heures.
+
+Si vous n'êtes pas à l'origine de cette commande, annulez-la immédiatement :
+
+[Annuler cette commande]
+
+Amazon.fr - Service Clients",邮件,Amazon.fr,Fausse commande chère pour pousser à annuler et voler les identifiants,"Domaine amazon-commandes.fr (vrai: amazon.fr), produit cher 489,99 EUR pour panique, lien Annuler vers faux site",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing Amazon
+示例272,"Bonjour,
+
+L'acheteur a procédé au paiement de 45,00 EUR pour votre article ""Veste Zara taille M"".
+
+Pour recevoir les fonds sur votre portefeuille Vinted, confirmez l'envoi :
+
+[Confirmer et recevoir le paiement]
+
+Vinted - Service des transactions",邮件,Vinted,Faux paiement reçu pour inciter le vendeur à confirmer et saisir ses identifiants,"Domaine vinted-secure.com (vrai: vinted.fr), Vinted gère les paiements en interne jamais par email séparé",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing marketplace Vinted
+示例273,"Madame, Monsieur,
+
+Sauf erreur de notre part, la facture n°FA-2026-0417 d'un montant de 2 340,00 EUR TTC reste impayée à ce jour.
+
+Veuillez trouver ci-joint le duplicata de la facture.
+
+[Facture-FA-2026-0417.pdf.exe]
+
+Merci de procéder au règlement dans les meilleurs délais.",邮件,Comptabilité Durand SARL (faux fournisseur),Fausse facture impayée avec pièce jointe exécutable déguisée en PDF (malware),"Expéditeur inconnu, pièce jointe .pdf.exe déguisée, ton menaçant sans détails vérifiables",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing facture avec malware en pièce jointe
+示例274,"Bonjour,
+
+Le facteur s'est présenté à votre domicile le 16/03/2026 à 10h42, mais n'a pas pu vous remettre votre colis (personne présente).
+
+Reprogrammez votre livraison gratuitement :
+
+[Reprogrammer ma livraison]
+
+Votre colis sera conservé 15 jours en bureau de poste.",邮件,La Poste,Faux avis de passage pour voler coordonnées ou coordonnées bancaires,"Domaine laposte-avis.fr (vrai: laposte.fr), les vrais avis de passage sont papier dans la boîte aux lettres, pas de numéro de colis vérifiable",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Faux avis de passage La Poste
+示例275,"Bonjour,
+
+Votre mot de passe Microsoft 365 expire le 18/03/2026. Pour éviter toute interruption de service, renouvelez-le dès maintenant :
+
+[Renouveler mon mot de passe]
+
+Si vous ne renouvelez pas votre mot de passe, vous perdrez l'accès à Outlook, Teams et OneDrive.
+
+Microsoft Corporation",邮件,Microsoft 365,Fausse expiration de mot de passe pour voler les identifiants professionnels,"Domaine microsoft365-alert.com (vrai: microsoft.com), les mots de passe Office 365 n'expirent pas automatiquement, menace de perte d'accès",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing Microsoft 365 professionnel
+示例276,"Bonjour,
+
+Votre espace iCloud a atteint 99,8 % de sa capacité. Si aucune action n'est prise, la synchronisation sera arrêtée et vos photos récentes seront définitivement supprimées.
+
+Profitez de notre offre exceptionnelle : 50 Go supplémentaires pour seulement 0,99 EUR/mois :
+
+[Augmenter mon stockage]",邮件,iCloud / Apple,"Faux stockage plein pour voler coordonnées bancaires via offre à 0,99 EUR","Domaine icloud-storage.com (vrai: apple.com), Apple ne supprime jamais les photos sans préavis prolongé, offre exceptionnelle comme appât",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing iCloud stockage plein
+示例277,"Attention : Le nom de domaine mon-entreprise.fr expire le 20/03/2026.
+
+Si le renouvellement n'est pas effectué, votre domaine sera mis aux enchères et pourra être acquis par un tiers.
+
+[Renouveler mon domaine maintenant - 89,99 EUR/an]",邮件,Domain Registry Services (faux registrar),Fausse expiration de nom de domaine avec prix gonflé,"Expéditeur inconnu pas le registrar habituel (OVH/Gandi), prix 89,99 EUR/an vs 7-12 EUR réel pour un .fr, menace de mise aux enchères",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing expiration de domaine
+示例278,"ATTENTION ! Votre protection Norton a expiré le 01/03/2026.
+
+Notre dernière analyse a détecté 3 menaces critiques sur votre appareil :
+
+- Trojan.GenericKD.47839212
+- Spyware.Banker.Gen
+- Adware.BrowserModifier
+
+Renouvelez immédiatement votre protection pour supprimer ces menaces :
+
+[Renouveler Norton - Offre -70% : 29,99 EUR/an]",邮件,Norton Security,Faux antivirus alertant de virus pour vendre un abonnement frauduleux ou malware,"Domaine norton-protection-alert.com, un antivirus ne communique pas ses alertes par email, noms de virus techniques pour impressionner, réduction agressive en alerte sécurité",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Arnaque au faux antivirus Norton
+示例279,"Bonjour,
+
+Votre facture Orange de février 2026 (47,99 EUR) reste impayée. Sans régularisation sous 72 heures, votre ligne mobile sera suspendue.
+
+[Régler ma facture]
+
+Orange - Service Recouvrement",邮件,Orange,Fausse facture impayée avec menace de suspension de ligne,"Domaine orange-mobile.net (vrai: orange.fr), menace de suspension sous 72h, Orange envoie plusieurs relances par courrier avant suspension",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing opérateur Orange
+示例280,"Bonjour,
+
+Suite à l'extension des Zones à Faibles Émissions (ZFE) au 1er mars 2026, votre véhicule nécessite une vignette Crit'Air pour circuler.
+
+Sans cette vignette, vous risquez une amende de 68 à 135 EUR.
+
+[Commander ma vignette Crit'Air - 29,90 EUR]",邮件,Service Crit'Air,Fausse vignette Crit'Aire facturée 8 fois le tarif officiel,"Site officiel certificat-air.gouv.fr, vignette à 3,72 EUR vs 29,90 EUR demandé, urgence liée à la réglementation",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Arnaque Crit'Air
+示例281,"Bonjour,
+
+Une mise à jour logicielle de votre compteur Linky est nécessaire. Pour programmer l'intervention d'un technicien, veuillez confirmer vos coordonnées et votre disponibilité :
+
+[Programmer mon intervention]
+
+Sans confirmation, votre compteur pourrait ne plus transmettre vos relevés.",邮件,Enedis - Compteur Linky,Fausse intervention Linky pour voler informations personnelles,"Domaine enedis-linky.com (vrai: enedis.fr), les mises à jour Linky sont automatiques à distance, Enedis ne demande jamais de confirmation par email",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Phishing compteur Linky
+示例282,"Madame, Monsieur,
+
+Je suis Maître Jean-Pierre Dumont, notaire à Paris. Suite au décès de Mme Hélène Moreau le 14/01/2026, survenu sans descendance directe, mes recherches ont établi que vous figurez parmi les bénéficiaires de sa succession, estimée à 847 000 EUR.
+
+Je vous prie de bien vouloir me contacter rapidement afin de procéder aux formalités de transfert. Des frais de dossier de 1 850 EUR seront nécessaires pour initier la procédure.
+
+Dans l'attente de votre retour, veuillez agréer mes salutations distinguées.",邮件,Notaire Me Jean-Pierre Dumont,Arnaque à l'héritage (succession fantôme) demandant des frais de dossier,"Vous ne connaissez pas la défunte, un vrai notaire contacte par courrier recommandé, demande d'argent pour débloquer un héritage (les vrais frais sont déduits de la succession)",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Arnaque à l'héritage / 419 scam
+示例283,"Bonjour,
+
+Je m'appelle Elena, j'ai 34 ans et je vis en Espagne. J'ai trouvé votre profil sur un annuaire professionnel et j'ai été touchée par votre parcours. J'aimerais beaucoup échanger avec vous si vous êtes ouvert(e) à de nouvelles rencontres amicales.
+
+Je suis médecin humanitaire et je traverse une période difficile...",邮件,"Elena Vasquez, médecin humanitaire (faux profil)",Romance scam : contact flatteur non sollicité pour construire une relation avant demande d'argent,"Contact non sollicité d'inconnue flatteuse, histoire personnelle émouvante (médecin humanitaire), progression rapide vers relation intime",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Arnaque sentimentale / romance scam
+示例284,"FÉLICITATIONS !
+
+Votre adresse email a été sélectionnée lors de notre tirage spécial et vous remportez la somme de 750 000,00 EUR !
+
+Pour réclamer votre gain, envoyez-nous les informations suivantes :
+
+- Nom complet
+- Adresse postale
+- Copie de pièce d'identité
+- Coordonnées bancaires (IBAN)
+
+Frais de transfert : 150,00 EUR (remboursés à la réception de vos gains)
+
+Agent de réclamation : M. Robert Williams",邮件,Euro Millions Officiel,Faux gain à la loterie pour voler identité et IBAN contre frais de dossier,"Vous n'avez participé à aucun tirage, on ne gagne jamais à une loterie par email, demande de frais pour débloquer un gain",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Arnaque à la loterie / tirage au sort
+示例285,"Salut Jean-Marc,
+
+Suite à notre réunion de mardi sur la migration des serveurs, j'ai besoin de tes identifiants de connexion au VPN pour effectuer les tests de charge ce weekend.
+
+Peux-tu me les envoyer en retour ? On est un peu dans le rush avec le planning de migration qu'on a validé avec Stéphanie.
+
+Merci, Thomas
+
+Thomas Lefèvre | Directeur des Systèmes d'Information IT Services Pro | 01 45 XX XX XX",邮件,"Thomas Lefèvre, DSI (collègue supposé)",Spear phishing ciblé : demande d'identifiants VPN en se faisant passer pour un collègue,"Référence à des éléments réels (réunion, projet, noms), demande d'identifiants par email, ton décontracté, un pro IT ne demande jamais un mot de passe par email",是,mailarnaque.fr - https://www.mailarnaque.fr/blog/exemples-emails-frauduleux-france,Spear phishing ciblé professionnel
+示例286,"Cher client,
+
+Nous vous informons que votre compte Apple ID a été suspendu temporairement pour des raison de sécurité. Une activité suspecte a été détectée sur votre compte le 28/04/2026.
+
+Pour éviter la suppression définitive de votre compte dans les 24 heures, vous devez confirmer votre identité immédiatement en cliquant sur le bouton ci-dessous.
+
+[ Confirmer mon Apple ID ]
+
+Si vous ne procédez pas à cette vérification dans les délais, votre compte sera fermer de manière permanente et vous perdrez l'accès à iCloud, App Store et tous les services Apple.
+
+Cordialement,
+
+L'équipe de sécurité Apple
+
+Copyright © 2026 Apple Inc. Tous droits réservés.",邮件,Apple Support (apple-id-securite.info),Faux blocage Apple ID pour voler identifiants via fausse page de connexion,"Domaine apple-id-securite.info (jamais utilisé par Apple), fautes de français (raison/sera fermer), urgence 24h, menace de perte iCloud",是,aines.itcares.ca - https://aines.itcares.ca/article-arnaque-apple-id.html,"Faux Apple ID, texte mot pour mot basé sur exemples reçus 2025-2026"
+示例287,"Nous sommes heureux de vous informer que votre iPhone 14 128 Go Midnight perdu a été localisé avec succès. Pour afficher l'emplacement actuel de votre appareil, veuillez cliquer sur le lien ci-dessous. Si vous n'avez pas lancé de rapport d'appareil perdu ou si vous pensez que ce message a été envoyé par erreur, veuillez l'ignorer ou contacter immédiatement notre équipe d'assistance.",短信,Apple Find My / équipe localisation,Phishing Find My : faux appareil localisé pour voler l'identifiant Apple via lien,"Détails du modèle extraits de l'écran de verrouillage de l'appareil, lien vers faux portail Find My, Apple ne contacte jamais par SMS pour signaler un appareil trouvé",是,technews.fr - https://technews.fr/2025/11/alerte-darnaque-par-phishing-ce-texte-nous-avons-trouve-votre-iphone-perdu-est-faux-et-vise-a-voler-votre-identifiant-apple.html,"Cité par NCSC suisse, phishing Find My iPhone"
+示例288,"Bonjour, je m'appelle Sophia et je travaille au service du recrutement Amazon. Numéro d'employé : AMZ-7677
+
+Nous avons examiné votre profil et estimons que vous correspondez parfaitement à notre offre d'emploi à distance, très bien rémunérée et peu exigeante. Ce poste est extrêmement simple : il consiste principalement à aider les vendeurs à optimiser leurs fiches produits afin d'améliorer leur présence en ligne.
+
+- Emploi du temps ultra-flexible : seulement 60 à 90 minutes par jour, 4 jours par semaine
+- Rémunération : 250 à 500 dollars par jour (salaire de base de 1 000 dollars pour chaque période de 4 jours travaillés)
+- Avantages supplémentaires : accompagnement complet + 15 à 20 jours de congés annuels payés
+
+Nous recherchons 20 personnes dès maintenant. Si vous avez au moins 25 ans et que vous souhaitez gagner facilement un revenu complémentaire, envoyez un SMS au 16172930958 pour plus d'informations.
+
+Réf. 46499",短信,Amazon Recruiting (faux recruteur Sophia),Fausse offre d'emploi Amazon trop belle pour être vraie (task scam),"Message depuis adresse Hotmail générique, rémunération disproportionnée (250-500$/jour pour 60-90 min), Amazon ne recrute pas via Hotmail/SMS, pression 20 places",是,Malwarebytes (fr) - https://www.malwarebytes.com/fr/blog/scams/2026/06/watch-out-for-high-paying-low-effort-amazon-job-texts,"Faux recrutement Amazon, arnaque aux tâches"
+示例289,"Bonjour Madame Martin, je suis Philippe Leblanc du service sécurité du Crédit Agricole. Nous avons détecté plusieurs tentatives de paiement suspectes sur votre carte. Pour votre sécurité, nous devons récupérer votre carte compromise. Un agent agréé passera chez vous dans l'heure.",语音,Crédit Agricole service sécurité,"Vishing + faux coursier : appel annonçant carte compromise, puis envoi d'un complice récupérer la carte et le code PIN","Aucune banque n'envoie de coursier à domicile, connaissance du nom de la victime, urgence d'1h, spoofing du numéro de la banque",是,iarnaque.fr - https://www.iarnaque.fr/arnaques/telephone/arnaque-faux-coursier-banque,"Vishing faux coursier bancaire, scénario 1"
+示例290,"Monsieur Dupont, votre carte bancaire a été clonée. Des achats frauduleux sont en cours à l'étranger. Il est impératif de récupérer votre carte immédiatement pour stopper les opérations. Préparez votre carte et notez votre code PIN dans l'enveloppe que le coursier vous remettra.",语音,Banque (service fraude),"Vishing : carte clonée à l'étranger, demande de noter le code PIN pour le faux coursier","La banque bloque la carte à distance, jamais de coursier, le code PIN n'est jamais demandé ni connu de la banque",是,iarnaque.fr - https://www.iarnaque.fr/arnaques/telephone/arnaque-faux-coursier-banque,"Vishing, scénario carte clonée"
+示例291,"Bonjour, brigadier Moreau de la police judiciaire. Nous enquêtons sur un réseau de fraude à la carte bancaire et votre carte fait partie des cartes compromises. Un officier va passer récupérer votre carte pour analyse. Veuillez préparer votre carte et votre code confidentiel.",语音,Brigadier de police judiciaire,Vishing usurpant la police pour récupérer la carte et le code PIN,"La police ne récupère jamais une carte bancaire à domicile pour analyse, usurpation d'autorité policière, demande du code confidentiel",是,iarnaque.fr - https://www.iarnaque.fr/arnaques/telephone/arnaque-faux-coursier-banque,Vishing faux policier
+示例292,"ANTAI : FPS impayé réf. FPS-2026-4829. Montant : 35€. Évitez la majoration, payez sous 48h : stationnement-fps.fr/paiement",短信,ANTAI,Smishing faux forfait post-stationnement avec lien vers faux site amendes.gouv.fr,"L'ANTAI n'envoie jamais de SMS, domaine stationnement-fps.fr au lieu de amendes.gouv.fr, urgence 48h vs 45 jours réels",是,iarnaque.fr - https://www.iarnaque.fr/arnaques/sms/arnaque-faux-pv-stationnement,Smishing faux FPS stationnement
+示例293,Service-stationnement : Contravention détectée le 17/03/2026. Régularisez sous 24h pour éviter la majoration à 75€ : fps-amendes.com,短信,Service stationnement (faux ANTAI),Smishing contravention avec menace de majoration 75€,"Domaine fps-amendes.com non officiel, urgence 24h, les vrais FPS donnent 45 jours",是,iarnaque.fr - https://www.iarnaque.fr/arnaques/sms/arnaque-faux-pv-stationnement,Smishing faux PV
+示例294,Avis FPS : Votre véhicule AA-123-BB a fait l'objet d'un constat. Paiement en ligne : antai-stationnement.fr,短信,ANTAI (faux),"Smishing FPS avec immatriculation générique, lien vers faux site","Domaine antai-stationnement.fr (vrai: antai.fr / amendes.gouv.fr), pas de numéro de télépaiement vérifiable",是,iarnaque.fr - https://www.iarnaque.fr/arnaques/sms/arnaque-faux-pv-stationnement,Smishing quishing FPS
+示例295,"Colissimo
+
+Votre colis n°FR74391827 est en attente. Frais de douane : 2,49€. Réglez avant 24h : colissimo-livraison-fr.com",短信,Colissimo / La Poste,"Smishing colis bloqué avec frais de douane 2,49€ pour voler la CB","Domaine colissimo-livraison-fr.com (vrai: laposte.fr), urgence 24h, petit montant 2,49€ comme appât",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing colis Colissimo
+示例296,"ANTAI
+
+Hier 16:42
+
+Contravention impayée de 35€. Évitez la majoration urgente. Régularisez maintenant : amendes-gouv-paiement.fr",短信,ANTAI,Smishing contravention 35€ vers faux site de paiement,"L'ANTAI n'envoie jamais de SMS, domaine amendes-gouv-paiement.fr au lieu de amendes.gouv.fr, urgence inventée",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing amende ANTAI
+示例297,"CA Crédit Agricole
+
+Aujourd'hui 11:03
+
+ALERTE : Un virement de 890€ a été initié depuis votre compte ce matin. Si ce n'est pas vous, appelez 01 76 38 XX XX URGENT",短信,Crédit Agricole,Smishing alerte virement frauduleux pour inciter à rappeler un faux numéro (vishing),"Numéro 01 76 38 XX XX non officiel, crée la panique, fil de conversation usurpé, la vraie banque ne demande pas de rappel à un numéro tiers",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing vers vishing faux conseiller bancaire
+示例298,"Ameli
+
+Lundi 14:27
+
+Un remboursement de 87,50€ vous est dû. Mettez à jour vos coordonnées bancaires. ameli-remboursement-fr.com/rib",短信,Ameli / Assurance Maladie,"Smishing remboursement 87,50€ pour voler le RIB","Ameli ne demande jamais de RIB par SMS, domaine ameli-remboursement-fr.com, les remboursements sont automatiques",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing Ameli
+示例299,"DGFiP
+
+Jeudi 10:15
+
+Votre remboursement fiscal de 2143€ est disponible. Renseignez votre RIB pour le recevoir. impots-remboursement-fr.com",短信,DGFiP / impôts,Smishing remboursement d'impôts 2143€ pour voler le RIB,"Les impôts ne remboursent jamais par SMS, domaine impots-remboursement-fr.com, délai inventé, contact officiel via impots.gouv.fr",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing impôts
+示例300,"Vinci Autoroutes : Vous avez un péage impayé de 4,70€. Réglez sous 48h pour éviter les frais : vinci-autoroute-paiement.com",短信,Vinci Autoroutes,"Smishing péage impayé 4,70€ vers faux site de paiement","Les sociétés d'autoroutes ne réclament pas de péage par SMS avec lien, petit montant 4,70€ crédible, urgence 48h",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing faux péage Vinci
+示例301,"OR Orange
+
+Vendredi 19:08
+
+Votre facture est disponible. Une action est requise pour éviter la coupure de ligne. orange-facture-secure.com",短信,Orange,Smishing facture impayée avec menace de coupure de ligne pour voler identifiants,"URL orange-facture-secure.com non officielle, menace de coupure = pression, vole les identifiants pour portabilité frauduleuse",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing opérateur Orange
+示例302,Félicitations ! Votre fidélité récompensé par SFR ! un iPhone 17 Gratuit. Réclamez avant ce soir : sfr-client-cadeau.com/gain,短信,SFR,Smishing faux cadeau fidélité (iPhone 17 gratuit) pour collecter données et abonnements cachés,"Numéro mobile +33 6 inconnu, offre trop belle pour être vraie, urgence avant ce soir, abonnement payant caché dans les CGV",是,toutsurlacyber.fr - https://toutsurlacyber.fr/faux-sms-arnaque-guide-complet/,Smishing faux cadeau SFR
+示例303,"Cher client, suite à une activité suspecte, les retraits sur votre compte Binance ont été bloqués. Pour des raisons de sécurité, vous devez vérifier votre identité dans les 24 heures. Si aucune action n'est entreprise, vos fonds seront gelés définitivement. Cliquez sur le lien ci-dessous pour débloquer votre portefeuille.",邮件,Binance,Phishing crypto : faux blocage des retraits pour voler identifiants et seed phrase,"Urgence 24h et menace de gel définitif des fonds, lien vers faux site Binance, une plateforme officielle ne menace jamais de geler les fonds par email",是,juriup.ch - https://juriup.ch/arnaques/arnaque-au-faux-compte-bloque-le-phishing-des-portefeuilles-cryptos/,Phishing crypto Binance
+示例304,TrustWallet Alert : Une tentative de connexion non autorisée a été détectée. Sécurisez vos fonds immédiatement en validant votre phrase de récupération via le lien suivant : https://trustwallet-secure-auth.com,短信,Trust Wallet,Smishing crypto : vol de la phrase de récupération (seed phrase) via lien frauduleux,"URL trustwallet-secure-auth.com non officielle, le support ne demande jamais la seed phrase sur un site web, l'URL donne un accès total aux fonds",是,juriup.ch - https://juriup.ch/arnaques/arnaque-au-faux-compte-bloque-le-phishing-des-portefeuilles-cryptos/,Smishing crypto Trust Wallet
+示例305,"Bonjour, je suis agent du support Coinbase. Nous avons remarqué que votre transaction est bloquée. Pour la débloquer, veuillez synchroniser votre portefeuille sur notre portail sécurisé. Avez-vous votre phrase secrète de 12 mots à portée de main ?",邮件,Support Coinbase (message privé Telegram),Faux support Telegram : demande directe de la phrase secrète de 12 mots,"Le support n'est jamais spontané sur Telegram, demande directe de la seed phrase = vol total des fonds, portail sécurisé factice",是,juriup.ch - https://juriup.ch/arnaques/arnaque-au-faux-compte-bloque-le-phishing-des-portefeuilles-cryptos/,Faux support crypto sur Telegram
+示例306,"Cher membre, nous n'avons pas pu valider la facturation de votre abonnement. Sans mise à jour de votre mode de paiement, votre compte Netflix sera suspendu demain. Veuillez actualiser vos coordonnées via le lien suivant : [Lien]",邮件,Netflix,Phishing Netflix : facturation échouée pour voler coordonnées bancaires,"Urgence demain, expéditeur hors domaine netflix.com, Netflix ne demande jamais la CB par email, lien vers faux site",是,juriup.ch - https://juriup.ch/arnaques/phishing-netflix-et-streaming-larnaque-au-probleme-de-paiement-en-suisse/,Phishing Netflix facturation
+示例307,"Spotify : Votre dernier paiement a été refusé. Pour éviter l'interruption de votre musique, mettez à jour votre carte ici : hxxp://update-spotify-ch.com",短信,Spotify,Smishing Spotify : paiement refusé pour voler la carte bancaire,"Les services de streaming n'envoient quasiment jamais de SMS pour un problème de CB, URL update-spotify-ch.com non officielle",是,juriup.ch - https://juriup.ch/arnaques/phishing-netflix-et-streaming-larnaque-au-probleme-de-paiement-en-suisse/,Smishing Spotify
+示例308,"Félicitations ! En tant que client fidèle, vous gagnez 1 an d'abonnement Disney+ gratuit. Confirmez vos coordonnées et réglez 1,50 CHF de frais d'activation sur ce lien sécurisé.",邮件,Disney+,"Faux cadeau abonnement avec frais d'activation 1,50 CHF pour voler la CB","Faux reward, les frais d'activation servent à capturer le numéro de carte, lien sécurisé factice, vous ne vous êtes pas inscrit à ce jeu",是,juriup.ch - https://juriup.ch/arnaques/phishing-netflix-et-streaming-larnaque-au-probleme-de-paiement-en-suisse/,Phishing Disney+ faux abonnement gratuit
+示例309,Netflix : nous n'avons pas pu traiter votre paiement. Votre abonnement est suspendu. Mettez a jour vos informations : netflix-billing[.]info,短信,Netflix,"Smishing Netflix : paiement non traité, abonnement suspendu","Domaine netflix-billing.info non officiel (vrai: netflix.com), Netflix ne demande jamais la CB par email/SMS, faute de frappe Mettez a jour",是,louche-ou-pas.fr - https://louche-ou-pas.fr/arnaque/netflix,Smishing Netflix
+示例310,"Bonjour, je suis le propriétaire de l'appartement T3 situé au 15 rue de la Paix, Paris 2e. Je suis actuellement en mission humanitaire au Sénégal et ne peux pas assurer les visites. L'appartement est disponible immédiatement. Pour le réserver, merci de m'envoyer le dépôt de garantie (1 200 euros) par Western Union. Je vous enverrai les clés par courrier recommandé dès réception.",邮件,Faux propriétaire expatrié au Sénégal,Fausse location : propriétaire à l'étranger demandant dépôt de garantie par Western Union avant visite,"Refus de visite, demande de virement Western Union avant toute visite, aucune location sérieuse ne se fait sans visite, paiement non traçable",是,iarnaque.fr - https://iarnaque.fr/arnaques/sites/arnaque-faux-loyer-location,Arnaque à la fausse location immobilière
+示例311,"Magnifique villa 4 chambres avec piscine, vue mer, Cassis. 800 euros/semaine tout compris. Réservation rapide hors plateforme pour éviter les frais Airbnb. Virement bancaire uniquement. Places limitées pour l'été.",邮件,Faux loueur Airbnb / location saisonnière,"Fausse location saisonnière : paiement hors plateforme, villa qui n'existe pas","Paiement direct hors plateforme Airbnb, photos volées, refus de visite, logement inexistant, virement uniquement non protégé",是,iarnaque.fr - https://iarnaque.fr/arnaques/sites/arnaque-faux-loyer-location,Faux Airbnb / location vacances
+示例312,"Cabinet Martin Immobilier - Nous avons plusieurs biens correspondant à votre recherche. Pour constituer votre dossier et accéder aux visites, merci de régler les frais de dossier de 150 euros par virement.",邮件,Cabinet Martin Immobilier (agence fictive),Usurpation d'agence immobilière : frais de dossier 150€ avant même l'accès aux visites,"Demande de frais avant visite, agence réelle non contactée, virement demandé sans bail signé",是,iarnaque.fr - https://iarnaque.fr/arnaques/sites/arnaque-faux-loyer-location,Fausse agence immobilière
+示例313,"Cher client, votre abonnement annuel au support Microsoft Defender a été renouvelé avec succès. Un montant de 399 CHF sera débité de votre carte de crédit dans les 24 heures. Si vous n'êtes pas à l'origine de cette commande, veuillez contacter immédiatement notre service de facturation au 0800 XX XX XX pour annuler la transaction.",邮件,Microsoft Defender / service facturation,Faux renouvellement d'abonnement 399 CHF pour pousser à appeler un faux support qui vole la CB,"Faux sentiment d'urgence de prélèvement, objectif = appeler le numéro fourni, Microsoft n'a pas de tel service de facturation spontané",是,juriup.ch - https://juriup.ch/arnaques/arnaque-au-faux-support-technique-microsoft-apple/,Tech support scam email Microsoft
+示例314,"Bonjour, je vous appelle du centre de sécurité Microsoft à Genève. Nous avons reçu plusieurs alertes graves provenant de votre ordinateur indiquant qu'il est en train de se faire pirater et que votre adresse IP est utilisée pour des actes illégaux.",语音,Centre de sécurité Microsoft Genève,Vishing tech support : appel spontané signalant piratage pour prendre le contrôle à distance,"Microsoft n'appelle jamais ses clients de façon proactive pour signaler un virus, usurpation d'autorité, appel non sollicité",是,juriup.ch - https://juriup.ch/arnaques/arnaque-au-faux-support-technique-microsoft-apple/,Vishing faux support Microsoft
+示例315,"Pour bloquer les transactions frauduleuses et vous rembourser nos frais d'intervention, connectez-vous à votre e-banking. Je vais assombrir votre écran quelques instants pour sécuriser la connexion, veuillez valider la notification Push sur votre téléphone.",语音,Faux technicien support ( manipulation e-banking),"Vishing : manipulation e-banking, fait valider une notification Push qui autorise un virement vers les escrocs","Phase décisive du vol : l'escroc masque l'écran pendant qu'il fait un virement, la victime valide sans lire, jamais de connexion e-banking au téléphone avec un tiers",是,juriup.ch - https://juriup.ch/arnaques/arnaque-au-faux-support-technique-microsoft-apple/,Vishing manipulation e-banking / AitM
+示例316,Validez la notification pour bloquer le paiement.,语音,Faux conseiller bancaire service sécurité,Vishing : fait valider une notification Push qui autorise en réalité un virement frauduleux,"Phrase type du faux conseiller bancaire, la banque ne demande jamais de valider une notification pour bloquer un paiement, c'est l'opération frauduleuse elle-même",是,help-clic.fr - https://help-clic.fr/faux-conseiller-bancaire-arnaque-proteger-compte/,Vishing bancaire phrase type
+示例317,Ajoutez ce bénéficiaire pour protéger vos fonds.,语音,Faux conseiller bancaire,Vishing : incite à ajouter un bénéficiaire (compte des escrocs) sous prétexte de sécurisation,"La banque ne demande jamais d'ajouter un bénéficiaire pour protéger les fonds, le bénéficiaire est le compte des escrocs",是,help-clic.fr - https://help-clic.fr/faux-conseiller-bancaire-arnaque-proteger-compte/,Vishing ajout bénéficiaire frauduleux
+示例318,"Découpez votre carte, mais gardez la puce intacte.",语音,Faux conseiller bancaire,Vishing : fait découper la carte mais garder la puce pour que le faux coursier vole encore les fonds,"Phrase type de l'arnaque au faux coursier, la vraie banque bloque la carte à distance, jamais de découpage à la demande",是,help-clic.fr - https://help-clic.fr/faux-conseiller-bancaire-arnaque-proteger-compte/,Vishing faux coursier
+示例319,"Si vous raccrochez, vous risquez de perdre votre argent.",语音,Faux conseiller bancaire service sécurité,Vishing : menace d'angoisse pour empêcher la victime de raccrocher et vérifier,"Pression psychologique pour maintenir la ligne ouverte, empêche la victime de rappeler la vraie banque, classique du vishing",是,help-clic.fr - https://help-clic.fr/faux-conseiller-bancaire-arnaque-proteger-compte/,Vishing pression psychologique
