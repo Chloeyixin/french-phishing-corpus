@@ -1,79 +1,119 @@
-# French Phishing Corpus + Multi-Level Detection Baselines / 法语钓鱼语料库与多层级检测基线
+# French Phishing Message Corpus
 
-[English](#english) | [中文](#中文)
+An annotated corpus of 1,591 French messages (phishing, spam, ham) together with the code used in
+*Detecting French Phishing Messages under Label Scarcity: A Corpus and Label-Efficiency Benchmark*.
 
----
+The repository serves two purposes: (i) release the annotated corpus, and (ii) allow every table and
+figure in the paper to be regenerated from the released data.
 
-## English
+## Corpus
 
-**A French Phishing Corpus and Multi-Level Detection Baselines** — data and reproducible scripts accompanying the manuscript submitted to *Language Resources and Evaluation*.
+| Channel | Label | Count |
+|---|---|---|
+| Email | phishing | 168 |
+| SMS | phishing | 132 |
+| Vishing (transcribed) | phishing | 13 |
+| Webpage (form text) | phishing | 4 |
+| Physical (letter/notice) | phishing | 2 |
+| SMS | spam | 612 |
+| SMS | ham | 660 |
+| **Total** | | **1,591** |
 
-### About
-- **Corpus size**: 1,591 French messages
-  - **319 phishing samples** collected from official French sources (Cybermalveillance.gouv.fr, bank and telecommunication operator security pages, French administrative institutions), each with a verbatim French original, scam type, impersonated entity, rationale, and traceable source URL.
-  - **1,272 SMS messages** (612 spam / 660 ham) from the SpamShield multilingual dataset (CC-BY-4.0).
-- **Baselines reported** (unified evaluation protocol, phishing = positive class):
-  - Unsupervised K-means (TF-IDF, K=2): Precision 0.197, Recall 0.966, **F1 = 0.327**
-  - Semi-supervised seeded K-means (10 phish + 10 ham seeds): Precision 0.742, Recall 0.605, **F1 = 0.667**
-  - Phishing-signal weighted ranking: Top-20 hit rate 100%, Top-81 hit rate 91.4% (random baseline 20%)
-  - Supervised SVM / Logistic Regression (plain TF-IDF, 5-fold CV): **F1 = 0.860**, Accuracy 0.960
+Phishing messages account for 20% of the corpus; the phishing/non-phishing imbalance is intentional
+and is not resampled in any experiment. SMS spam and ham were drawn from a CC-BY-4.0 public SMS
+collection; all phishing messages were collected and annotated by the author. Personal identifiers
+(phone numbers, email addresses, URLs, account numbers) were removed during cleaning.
 
-### Data
-| File | Description |
-|---|---|
-| `data/法语语料库_最终版_钓鱼邮件319条+垃圾短信1272条.xlsx` | Full corpus, two sheets (phishing / SMS); **input used by all scripts** |
-| `data/法语钓鱼语料_319条.csv` | Phishing subset, 9 columns (ID, French text, type, impersonated entity, technique, rationale, label, source, remarks) |
-| `data/法语垃圾短信_1272条.csv` | SMS subset, 5 columns |
+Corpus file: `法语语料库_最终版_钓鱼邮件319条+垃圾短信1272条.xlsx` (sheet `corpus`).
 
-### Reproduce
-```bash
-pip install pandas scikit-learn openpyxl numpy
-cd scripts
-python3 hybrid_kmeans.py        # Table: unsupervised baselines
-python3 hybrid_kmeans_feat.py   # feature-discriminativeness analysis
-python3 hybrid_kmeans_v2.py     # seeded K-means (K=2 / K=3)
-python3 score_ranking.py        # Top-N ranking
-python3 supervised_baseline.py  # supervised 5-fold CV comparison
+## Repository layout
+
 ```
-All scripts read `data/法语语料库_最终版_钓鱼邮件319条+垃圾短信1272条.xlsx` (relative path) and print the metrics reported in the paper. Random seeds are fixed (42) for reproducibility.
-
-### License
-- Phishing subset (collected from official public sources): released for research use; please cite this manuscript and the original sources when reusing.
-- SMS subset: SpamShield dataset, **CC-BY-4.0** (https://huggingface.co/datasets/M-Arjun/SpamShield-Datasets).
-- Scripts: MIT.
-
-### Citation (to be completed after acceptance)
-Xin Yi. A French Phishing Corpus and Multi-Level Detection Baselines: Unsupervised, Semi-Supervised, and Supervised Evaluation. *Language Resources and Evaluation* (submitted).
-
----
-
-## 中文
-
-**法语钓鱼语料库与多层级检测基线** — 配套论文（投稿《Language Resources and Evaluation》）的数据与可复现脚本。
-
-### 简介
-- **语料规模**：1,591 条法语消息
-  - **319 条钓鱼样本**，全部来自法国官方/权威来源（Cybermalveillance.gouv.fr、各银行与运营商安全公告、法国行政机构），每条含法语原文、诈骗类型、伪装对象、判定依据与可追溯来源。
-  - **1,272 条短信**（垃圾 612 / 正常 660），来自 SpamShield 多语数据集（CC-BY-4.0）。
-- **报告基线**（统一评估口径，钓鱼为正类）：
-  - 无监督 K-means（TF-IDF, K=2）：精确率 0.197，召回率 0.966，**F1 = 0.327**
-  - 半监督 seeded K-means（10 钓鱼 + 10 正常种子）：**F1 = 0.667**
-  - 钓鱼信号加权排序：Top-20 命中率 100%，Top-81 命中率 91.4%（随机基线 20%）
-  - 监督 SVM / 逻辑回归（纯 TF-IDF，5 折交叉验证）：**F1 = 0.860**，准确率 0.960
-
-### 复现
-```bash
-pip install pandas scikit-learn openpyxl numpy
-cd scripts
-python3 hybrid_kmeans.py        # 无监督基线
-python3 hybrid_kmeans_feat.py   # 特征区分度分析
-python3 hybrid_kmeans_v2.py     # seeded K-means（K=2 / K=3）
-python3 score_ranking.py        # Top-N 排序
-python3 supervised_baseline.py  # 监督 5 折对比
+data/            corpus workbook (see file name above)
+scripts/         all experiment code (see mapping below)
+results/         JSON outputs, one file per experiment
+figures/         figure sources
 ```
-所有脚本读取 `data/` 下同名 xlsx（相对路径），随机种子固定为 42。
 
-### 许可
-- 钓鱼子集（采集自官方公开来源）：供研究使用，引用本论文及原始来源即可。
-- 短信子集：SpamShield 数据集，**CC-BY-4.0**。
-- 脚本：MIT。
+## Script-to-result mapping
+
+| Paper element | Script | Output |
+|---|---|---|
+| Table 3 (unsupervised / seeded K-means) | `scripts/hybrid_kmeans_v3.py` | `results/cv_stratified5.json` |
+| Table 5 rows 1–8 (TF-IDF baselines) | `scripts/supervised_baseline.py` | `results/cv_stratified5.json` |
+| Table 5, CamemBERT row | `scripts/train_camembert.py` | `results/camembert_results.json` |
+| Table 5, group-aware row | `scripts/train_camembert_grouped.py` | `results/camembert_grouped_results.json` |
+| Table 6, Figure 4 (label efficiency) | `scripts/label_efficiency.py` | `results/label_efficiency.json` |
+| Section 6.5, SMS channel subset | `scripts/sms_channel_svm.py` | `results/sms_channel_svm.json` |
+| Section 6.5, near-duplicate audit and grouped CV | `scripts/neardup_audit.py` | `results/neardup_audit.json`, `results/cv_grouped5.json` |
+| Figure 3 (three supervision levels) | `scripts/hybrid_kmeans.py` | `results/cv_stratified5.json` |
+
+## Reported results
+
+Five-fold cross-validation, phishing as the positive class. Mean ± standard deviation.
+
+| Model | P | R | F1 | Acc |
+|---|---|---|---|---|
+| K-means, no supervision | 0.197 | 0.966 | 0.327 | — |
+| Seeded K-means, fixed seed | 0.742 | 0.605 | 0.667 | — |
+| Multinomial NB, TF-IDF | — | — | 0.800 | — |
+| k-NN, TF-IDF | — | — | 0.552 | — |
+| SVM, TF-IDF | 0.971 | 0.824 | 0.860 | 0.960 |
+| Logistic regression, TF-IDF | 0.967 | 0.837 | 0.860 | 0.962 |
+| CamemBERT, partial fine-tuning | 0.942 | 0.959 | 0.950 ± 0.015 | 0.980 |
+| CamemBERT, group-aware CV | 0.951 | 0.965 | 0.958 ± 0.010 | 0.983 |
+
+Per-fold F1 for CamemBERT: 0.953 / 0.969 / 0.924 / 0.952 / 0.953 (standard CV) and
+0.947 / 0.960 / 0.952 / 0.977 / 0.955 (group-aware CV). The group-aware variant constrains messages
+belonging to the same near-duplicate cluster to the same fold.
+
+Label efficiency (Table 6): seeded K-means reaches F1 0.687 / 0.617 / 0.777 / 0.843 / 0.862 / 0.882 at
+5 / 10 / 20 / 40 / 80 / 160 labelled messages per class, against 0.492 / 0.554 / 0.688 / 0.787 / 0.827 /
+0.874 for the supervised SVM. Semi-supervised learning is ahead below roughly 80 labels per class, and
+40 labels per class is the point where the curves stop being unstable.
+
+## Environment
+
+Python 3.11, scikit-learn 1.4.0, torch 2.15.0 (CPU), transformers 5.23.0, sentencepiece, openpyxl 3.1.5,
+matplotlib 3.11.0. All runs were executed on a 2-core CPU machine with 4 GB of RAM; no GPU was used.
+
+### CamemBERT configuration
+
+`camembert-base`, max sequence length 96, batch size 8, AdamW with lr 3e-5, weight decay 0.01, 3 epochs,
+10% warmup, gradient clipping 1.0, class-weighted cross-entropy. The embeddings and transformer layers
+0–7 are frozen, leaving roughly 28 M trainable parameters. This is a memory-driven choice: full
+fine-tuning on the same machine exceeded the available RAM. The reported scores should therefore be
+read as a conservative lower bound for a French encoder on this task, not as the best achievable
+transformer result.
+
+## Reproducing
+
+```
+pip install -r requirements.txt
+python scripts/supervised_baseline.py        # TF-IDF baselines, Table 5
+python scripts/train_camembert.py            # CamemBERT, Table 5
+python scripts/train_camembert_grouped.py    # group-aware CV, Table 5
+python scripts/label_efficiency.py           # Table 6, Figure 4
+python scripts/neardup_audit.py              # near-duplicate audit, Section 6.5
+```
+
+Each script writes its JSON to `results/`. Random seeds are fixed and recorded in the output files.
+
+## Ethics and licensing
+
+All messages were collected from publicly accessible sources or from the author's own devices, with
+personal identifiers removed before annotation. No message contains a live phishing URL, and no
+credential, phone number, or account number is reproduced. The annotated corpus is released for
+research use; the SMS spam and ham portion remains under CC-BY-4.0 and is redistributed here with
+attribution.
+
+## Citation
+
+```
+@article{yi2026frenchphishing,
+  title   = {Detecting French Phishing Messages under Label Scarcity: A Corpus and Label-Efficiency Benchmark},
+  author  = {Yi, Xin},
+  year    = {2026},
+  note    = {Manuscript submitted to Computers \& Security}
+}
+```
